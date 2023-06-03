@@ -57,7 +57,6 @@
         align-items: center;
         position: absolute;
         height: 130px;
-        -webkit-clip-path: polygon(0 0,100% 0,81% 100%,19% 100%);
         clip-path: polygon(0 0,100% 0,81% 100%,19% 100%);
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
 
@@ -75,19 +74,15 @@
         justify-content: center;
         align-items: center;
         text-transform: uppercase;
-
+        border-bottom: 5px solid transparent;
+        
         &:hover {
-            background-color: $color-secondary;
-            transition: background-color 0.3s ease;
             border-bottom: 5px solid red;
+            transition: border-bottom 0.3s ease;
         }
 
         &:active {
             border-bottom: 5px solid red;
         }
     }
-
-    //&__icon {
-
-    //}
 }
