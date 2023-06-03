@@ -1,0 +1,43 @@
+@import 'src/styles.scss';
+
+.footer {
+  flex-shrink: 0; 
+  background-color: $color-primary;
+  height: 120px;
+
+  &__top {
+    height: 75.6px; // 63% of 120px
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    &-text,
+    &-link {
+      color: $color-secundary-text;
+    }
+
+    &-link {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+
+      &-icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  &__bottom {
+    height: 44.4px; // 37% of 120px
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-text {
+      color: $color-secundary-text;
+      font-size: 0.75em;
+    }
+  }
+}
