@@ -1,0 +1,93 @@
+@import 'src/styles.scss';
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: $color-primary;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+    gap: 135px;
+
+    &__side {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+        
+        &--left {
+            width: 500px;
+        }
+        &--right {
+            width: 500px;
+        }
+    }
+
+    &__part {
+        &--top {
+            height: 37%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            p {
+                color: $color-secundary-text;
+            }
+            a {
+                height: 24px;
+                text-decoration: none;
+            }
+            
+        }
+
+        &--bottom {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            padding: 0px 50px;
+            height: 63%;
+        }
+    }
+
+    &__logo {
+        width: 235px;
+        background-color: #333; /* altere para a cor que desejar */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 130px;
+        -webkit-clip-path: polygon(0 0,100% 0,81% 100%,19% 100%);
+        clip-path: polygon(0 0,100% 0,81% 100%,19% 100%);
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+
+        &--img { 
+            width:100px;
+            height:100px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        text-decoration: none;
+        font-weight: 700;
+        width: 140px;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: $color-secondary;
+            transition: background-color 0.3s ease;
+            border-bottom: 5px solid red;
+        }
+
+        &:active {
+            border-bottom: 5px solid red;
+        }
+    }
+
+    //&__icon {
+
+    //}
+}
