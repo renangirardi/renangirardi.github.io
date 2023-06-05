@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+html {
+    //This defines what 1rem is
+    font-size: 62.5%;
+}
+
 body {
     background: linear-gradient(to right,#17161a,#242124 50%,#17161a);
 }
 
 main {
-    padding: 50px;
+    padding: 5rem;
     flex-grow: 1;
 }
 

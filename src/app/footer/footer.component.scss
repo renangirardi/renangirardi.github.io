@@ -3,14 +3,14 @@
 .footer {
   flex-shrink: 0; 
   background-color: $color-primary;
-  height: 120px;
+  height: 12rem;
 
   &__top {
-    height: 75.6px; // 63% of 120px
+    height: 7.56rem; // 63% of 120px
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 1rem;
 
     &-text,
     &-link {
@@ -23,14 +23,14 @@
       align-items: center;
 
       &-icon {
-        width: 24px;
-        height: 24px;
+        width: 2.4rem;
+        height: 2.4rem;
       }
     }
   }
 
   &__bottom {
-    height: 44.4px; // 37% of 120px
+    height: 4.44rem; // 37% of 120px
     display: flex;
     align-items: center;
     justify-content: center;
