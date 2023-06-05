@@ -1,29 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
-$color-primary: #17161a;
-$color-secondary: #636363;
-$color-primary-text: #fff;
-$color-secundary-text: silver;
+@import 'sass/abstracts/functions';
+@import 'sass/abstracts/mixins';
+@import 'sass/abstracts/variables';
 
-* {
-    font-family: Rubik,sans-serif;
-    font-size: 16px;
-    color: $color-primary-text;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+@import 'sass/base/animations';
+@import 'sass/base/base';
+@import 'sass/base/typography';
+@import 'sass/base/utilities';
 
-body {
-    background: linear-gradient(to right,#17161a,#242124 50%,#17161a);
-}
-  
-main {
-    padding: 50px;
-    flex-grow: 1;
-}
+@import 'sass/layout/grid';
 
-app-root {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
