@@ -1,0 +1,42 @@
+@import 'src/styles.scss';
+
+.banner {
+    background: url('/assets/placeholder-home-hero-banner.jpg') no-repeat center center / cover;
+    max-width: 100%;
+    height: 80rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    &__content {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 4.5em;
+        text-transform: uppercase;
+        margin-bottom: 5rem;
+    }
+
+    &__button {
+        padding: 2rem 5rem;
+        font-size: 1.2em;
+        border: none;
+        background-color: $color-tertiary; 
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        clip-path: polygon(0 0,90% 0,100% 100%,10% 100%);
+        box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.35);
+
+        &:hover {
+            background-color: $color-tertiary-hover;
+        }
+
+        &:active {
+            background-color: $color-tertiary-active;
+            box-shadow: 0rem 0.2rem 0.5rem 0rem rgba(0, 0, 0, 0.35);
+        }
+    }
+
+}
