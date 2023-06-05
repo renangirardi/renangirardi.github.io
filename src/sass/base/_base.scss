@@ -14,7 +14,8 @@ body {
 }
 
 main {
-    padding: 5rem;
+    max-width: $grid-width;
+    margin: 5rem auto;
     flex-grow: 1;
 }
 
