@@ -4,6 +4,7 @@
   flex-shrink: 0; 
   background-color: $color-primary;
   height: 12rem;
+  box-shadow: 0rem 0rem 1rem 0rem rgba(0, 0, 0, 0.35);
 
   &__top {
     height: 7.56rem; // 63% of 120px
