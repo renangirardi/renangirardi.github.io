@@ -1,3 +1,4 @@
+/******** DEFAULTS ********/
 *,
 *::after,
 *::before { 
@@ -35,6 +36,8 @@ body {
 
 }
 
+/******** HEADER ********/
+
 .header {
     padding-top: 1.6rem;
     color: white;
@@ -63,7 +66,6 @@ body {
 }
 
 .header__contact-link {
-    background-color: #;
     font-size: 1.4rem;
     font-weight: 900;
     text-transform: uppercase;
@@ -97,21 +99,67 @@ body {
     border-bottom: #738FA7 2px solid;
 }
 
+/******** BANNER ********/
 
 .banner {
     background-color: #071330;
     color: white;
     width: 100%;
+    height: 88rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.banner__content {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 2;
+}
+
+.banner__text {
+    flex-grow: 2;
 }
 
 .banner__heading {
     font-weight: 800;
     font-size: 7.2rem;
     line-height: 8rem;
+    margin-bottom: 2.4rem;
 }
 
 .banner__description{
     line-height: 3.2rem;
     font-size: 1.6rem;
+    margin-bottom: 5.1rem;
 }
 
+.banner__portfolio-link {
+    background-color: #4A90E2;
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 1.8rem 3.6rem 1.6rem;
+    border-radius: 6px;
+}
+
+.banner__portfolio-link:hover, .banner__portfolio-link:active {
+    background-color: #0C4160;
+}
+
+.banner__image {
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.banner__image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
