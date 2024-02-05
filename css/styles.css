@@ -31,6 +31,14 @@ body {
 
 }
 
+main {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /******** HEADER ********/
 
 .header {
@@ -264,6 +272,29 @@ body {
 
 /******** EXP & EDU AREA ********/
 
+.cv {
+    width: 100%;
+    padding: 9rem 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cv__heading {
+    font-weight: 800;
+    font-size: 4.4rem;
+    line-height: 6.4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 /******** PORTFOLIO AREA ********/
 
 .portfolio {
@@ -336,4 +367,67 @@ body {
 .portfolio__item {
     font-size: 4rem;
     font-weight: 800;
+}
+
+/******** FOOTER AREA ********/
+
+.footer {
+    background-color: #071330;
+    color: #fff;
+    width: 100%;
+    padding: 9rem 0 5.2rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer__top {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__title {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer__title>h1 {
+    padding: 0.5rem 0 0 1.4rem;
+}
+
+.footer__bottom {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer__divider {
+    width: 80vw;
+    margin: 1.4rem auto 1.4rem auto;
+    border-top: 1px solid #738FA7;
+    border-collapse:separate;
+}
+
+.footer__bottom {
+    font-size: 1.4rem;
 }
