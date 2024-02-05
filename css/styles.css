@@ -5,19 +5,14 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    font-family: 'Epilogue', sans-serif;
-    font-family: 'Poppins', sans-serif;
     font-family: 'Rubik', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Epilogue', sans-serif;
 }
 
 html {
     font-size: 62.5%;
     font-weight: 400;
-}
-
-* {
-    margin: 0;
-    font-family: Epilogue;
 }
 
 a {
@@ -222,4 +217,44 @@ body {
 .about__link:hover, .about__link:active, .about__link:focus {
     color: #fff;
     background-color: #0C4160;
+}
+
+.ai {
+    background-color: #4A90E2;
+    color: #fff;
+    width: 100%;
+    padding: 4.5rem 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ai__content {
+    width: 60vw;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ai__heading {
+    font-weight: 800;
+    font-size: 4.4rem;
+    line-height: 6.4rem;
+}
+
+.ai__text {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    margin-right: 5vw;
+}
+
+.ai__icons svg {
+    fill: #fff;
 }
