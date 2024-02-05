@@ -147,9 +147,10 @@ body {
     text-transform: uppercase;
     padding: 1.8rem 3.6rem 1.6rem;
     border-radius: 6px;
+    box-shadow: 2px 1px 5px #1e1e1e;
 }
 
-.banner__portfolio-link:hover, .banner__portfolio-link:active {
+.banner__portfolio-link:hover, .banner__portfolio-link:active, .banner__portfolio-link:focus {
     background-color: #0C4160;
 }
 
@@ -162,4 +163,63 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.about {
+    background-color: #C3CEDA;
+    color: #1e1e1e;
+    width: 100%;
+    padding: 9rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__heading {
+    font-weight: 800;
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    margin-bottom: 9.4rem;
+}
+
+.about__content {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__photo {
+    margin-right: 5vw;
+}
+
+.about__name {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    margin-bottom: 1.8rem ;
+}
+
+.about__bio {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    margin-bottom: 5.8rem ;
+}
+
+.about__link { 
+    background-color: #fff;
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 1.8rem 3.6rem 1.6rem;
+    border-radius: 6px;
+    box-shadow: 2px 1px 5px #888888;
+}
+
+.about__link:hover, .about__link:active, .about__link:focus {
+    color: #fff;
+    background-color: #0C4160;
 }
