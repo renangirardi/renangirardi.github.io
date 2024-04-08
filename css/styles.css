@@ -284,15 +284,85 @@ main {
     align-items: flex-start;
 }
 
-.cv__heading {
-    font-weight: 800;
-    font-size: 4.4rem;
-    line-height: 6.4rem;
+.cv__column {
+    width: 60rem;
+    padding: 0 3.2rem;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+}
+
+.cv__column--item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 1.6rem;;
+}
+
+.cv__column--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.cv__column--icon {
+    font-size: 3.2rem !important;
+    margin-right: 1.6rem;
+
+    color: #4A90E2;
+}
+
+.cv__course {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
+.cv__university {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.cv__heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 1.6rem;
+}
+
+.cv__heading h2 {
+    font-weight: 800;
+    font-size: 4.4rem;
+    line-height: 6.4rem;
+}
+
+.cv__cta {
+    width: 100%;
+    margin-top: 6.4rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv__cta a {
+    color: #fff;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    margin-top: 1.6rem;
+    background-color: #738FA780;
 }
 
 /******** PORTFOLIO AREA ********/
