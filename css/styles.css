@@ -202,6 +202,10 @@ main {
     margin-right: 5vw;
 }
 
+.about__photo img {
+    border-radius: 6px;
+}
+
 .about__name {
     font-size: 2rem;
     line-height: 3.2rem;
