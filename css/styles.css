@@ -353,7 +353,7 @@ main {
     font-weight: 800;
     font-size: 5.6rem;
     line-height: 6.4rem;
-    margin-bottom: 9.4rem;
+    margin-bottom: 6.4rem;
 }
 
 .about__content {
@@ -407,8 +407,7 @@ main {
 .ai {
     background-color: #4A90E2;
     color: #fff;
-    width: 100%;
-    padding: 4.5rem 0;
+    padding: 4.5rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -416,11 +415,10 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 5vw;
 }
 
 .ai__content {
-    width: 80vw;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -436,11 +434,43 @@ main {
 .ai__text {
     font-size: 1.6rem;
     line-height: 3.2rem;
-    margin-right: 5vw;
 }
 
-.ai__icons svg {
-    fill: #fff;
+.ai__icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.open-ai-logo {
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    background-image: url('../assets/images/openai-svgrepo-com.png');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.copilot-logo {
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    background-image: url('../assets/images/github-copilot-seeklogo.png');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.midjourney-logo {
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    background-image: url('../assets/images/midjourney-seeklogo.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 /******** EXP & EDU AREA ********/
@@ -508,7 +538,7 @@ main {
     justify-content: center;
     align-items: center;
 
-    margin-bottom: 1.6rem;
+    margin-bottom: 6.4rem;
 }
 
 .cv__heading h2 {
@@ -557,7 +587,7 @@ main {
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 9.4rem;
+    margin-bottom: 6.4rem;
 
     display: flex;
     flex-direction: row;
@@ -593,8 +623,26 @@ main {
     align-items: flex-start;
 }
 
-.portfolio__latest-works--item:last-of-type {
+.portfolio__latest-works--item-2 {
     margin-right: 2vw;
+    
+    position: relative;
+    background-image: linear-gradient(rgb(30,30,30,0.7), rgb(30,30,30,0.7)), url('../assets/images/porfolio-personal-website.png');
+    background-color: #1e1e1e;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portfolio__latest-works--item-3 {
+    margin-right: 2vw;
+    
+    position: relative;
+    background-image: linear-gradient(rgb(30,30,30,0.7), rgb(30,30,30,0.7)), url('../assets/images/coming-soon.png');
+    background-color: #1e1e1e;
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
 }
 
 .portfolio__badge {
