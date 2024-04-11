@@ -34,6 +34,12 @@ main {
     align-items: center;
 }
 
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
 /******** HEADER ********/
 
 .header {
@@ -68,6 +74,7 @@ main {
     padding: 1.8rem 3.6rem 1.6rem;
     border-radius: 6px;
     border: solid 1px #738FA7;
+    text-wrap: nowrap;
 }
 
 .header__contact-link:hover {
@@ -709,6 +716,35 @@ main {
     font-size: 1.4rem;
 }
 
+/******** WIP PAGE ********/
+
+.main-wip-page {
+    background-color: #071330;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    padding: 0 9.4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6.4rem;
+}
+
+.wip-message {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.wip-image {
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/******** MOBILE STYLES ********/
+
 @media (max-width: 768px) {
     html {
         font-size: 50%; /* Reduz para 8px = 1rem */
@@ -826,10 +862,10 @@ main {
         text-align: right;
         padding: 3.2rem;
     }
+
+    .wip-image {
+        width: 60vw;
+        height: auto;
+    }
 }
 
-img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
