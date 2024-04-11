@@ -116,6 +116,7 @@ img {
 }
 
 .banner__content {
+    padding-top: 18rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -796,11 +797,13 @@ img {
     }
 
     .banner__content {
+        padding-top: 24rem;
         flex-direction: column-reverse;
         gap: 6.4rem;
     }
 
     .banner__image {
+        display: none;
        width: 80vw;
     }
 
@@ -813,8 +816,8 @@ img {
     }
 
     .circle-background {
-        height: 65%;
-        width: auto;
+        height: auto;
+        width: 80%;
         aspect-ratio: 1 / 1;
     }
 
