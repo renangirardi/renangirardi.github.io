@@ -821,14 +821,16 @@ img {
         aspect-ratio: 1 / 1;
     }
 
-
-
     .cv__column {
         width: 100%;
     }
 
     .portfolio__latest-works {
         flex-direction: column;
+    }
+
+    .portfolio__latest-works--item-3 {
+        display: none;
     }
 
     .header .header__contact-link, .nav {
