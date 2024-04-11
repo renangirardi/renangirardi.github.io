@@ -37,7 +37,7 @@ main {
 /******** HEADER ********/
 
 .header {
-    padding-top: 1.6rem;
+    padding-top: 3.2rem;
     color: white;
 
     display: flex;
@@ -768,6 +768,10 @@ img {
 }
 
 @media (max-width: 768px) {
+    .header .header__contact-link, .nav {
+        display: none;
+    }
+
     .nav__list {
         flex-direction: column;
         align-items: center;
