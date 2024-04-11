@@ -4,7 +4,7 @@
 *::before { 
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Epilogue', sans-serif;
@@ -27,13 +27,8 @@ a:hover, a:active, a:focus {
     background-color: transparent;
 }
 
-body {
-
-}
-
 main {
     display: flex;
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -44,9 +39,6 @@ main {
 .header {
     padding-top: 1.6rem;
     color: white;
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
 
     display: flex;
     flex-direction: row;
@@ -109,16 +101,13 @@ main {
     color: white;
     width: 100%;
     height: 88rem;
+    padding: 0 9.4rem;
 
     display: flex;
     flex-direction: column;
 }
 
 .banner__content {
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -343,7 +332,8 @@ main {
     background-color: #C3CEDA;
     color: #1e1e1e;
     width: 100%;
-    padding: 9rem 0;
+    padding: 9rem 9.4rem;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -407,9 +397,7 @@ main {
 .ai {
     background-color: #4A90E2;
     color: #fff;
-    padding: 4.5rem;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 4.5rem 9.4rem;
 
     display: flex;
     flex-direction: row;
@@ -477,19 +465,17 @@ main {
 
 .cv {
     width: 100%;
-    padding: 9rem 0;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 9rem 9.4rem;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    gap: 6.4rem;
 }
 
 .cv__column {
-    width: 60rem;
-    padding: 0 3.2rem;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -574,9 +560,7 @@ main {
     background-color: #0C4160;
     color: #fff;
     width: 100%;
-    padding: 9rem 0;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 9rem 9.4rem;
 
     display: flex;
     flex-direction: column;
@@ -584,10 +568,8 @@ main {
 }
 
 .portfolio__header {
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 6.4rem;
+    width: 100%;
 
     display: flex;
     flex-direction: row;
@@ -608,13 +590,13 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 3.2rem;
 }
 
 .portfolio__latest-works--item {
     width: 100%;
     height: 57.6rem;
     background-color: red;
-    margin-left: 2vw;
     padding: 0 3.2rem 3.2rem;
 
     display: flex;
@@ -624,8 +606,6 @@ main {
 }
 
 .portfolio__latest-works--item-2 {
-    margin-right: 2vw;
-    
     position: relative;
     background-image: linear-gradient(rgb(30,30,30,0.7), rgb(30,30,30,0.7)), url('../assets/images/porfolio-personal-website.png');
     background-color: #1e1e1e;
@@ -635,8 +615,6 @@ main {
 }
 
 .portfolio__latest-works--item-3 {
-    margin-right: 2vw;
-    
     position: relative;
     background-image: linear-gradient(rgb(30,30,30,0.7), rgb(30,30,30,0.7)), url('../assets/images/coming-soon.png');
     background-color: #1e1e1e;
@@ -666,9 +644,7 @@ main {
     background-color: #071330;
     color: #fff;
     width: 100%;
-    padding: 9rem 0 5.2rem;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 9rem 9.4rem 5.2rem;
 
     display: flex;
     flex-direction: column;
@@ -677,10 +653,7 @@ main {
 }
 
 .footer__top {
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
-
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -702,10 +675,6 @@ main {
 }
 
 .footer__bottom {
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
-
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -713,7 +682,7 @@ main {
 }
 
 .footer__divider {
-    width: 80vw;
+    width: 100%;
     margin: 1.4rem auto 1.4rem auto;
     border-top: 1px solid #738FA7;
     border-collapse:separate;
