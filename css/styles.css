@@ -61,6 +61,7 @@ main {
 }
 
 .header__contact-link {
+      
     font-size: 1.4rem;
     font-weight: 900;
     text-transform: uppercase;
@@ -355,14 +356,20 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 3.2rem;
 }
 
 .about__photo {
-    margin-right: 5vw;
+    width: 80%;
+    flex-grow: 1;
 }
 
 .about__photo img {
     border-radius: 6px;
+}
+
+.about_info {
+    flex-grow: 2;
 }
 
 .about__name {
@@ -578,6 +585,7 @@ main {
 }
 
 .portfolio__heading {
+    width: 100%;
     font-weight: 800;
     font-size: 4.4rem;
     line-height: 6.4rem;
@@ -603,6 +611,15 @@ main {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+}
+
+.portfolio__latest-works--item-1 {
+    position: relative;
+    background-image: linear-gradient(rgb(30,30,30,0.7), rgb(30,30,30,0.7)), url('../assets/images/portfolio-sticker-story.png');
+    background-color: #1e1e1e;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .portfolio__latest-works--item-2 {
@@ -690,4 +707,74 @@ main {
 
 .footer__bottom {
     font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%; /* Reduz para 8px = 1rem */
+    }
+
+    .banner__heading {
+        font-size: 4.8rem; /* Reduz a fonte dos títulos grandes */
+    }
+
+    .about__heading, .cv__heading h2, .portfolio__heading {
+        font-size: 3.6rem; /* Reduz a fonte dos títulos de seção */
+    }
+}
+
+@media (max-width: 768px) {
+    .banner, .about, .ai, .cv, .portfolio, .footer {
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
+    }
+
+    .about__content, .cv, .ai, .ai__content {
+        flex-direction: column;
+        gap: 6.4rem; /* Muda a direção para coluna */
+    }
+
+    .about__content {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .cv__heading {
+        margin-bottom: 0;
+    }
+
+    .cv__cta { 
+        margin-top: 3.2rem;
+    }
+
+    .banner__image {
+        display: none;
+    }
+
+    .cv__column {
+        width: 100%; /* Ajusta as colunas para ocupar a largura total */
+    }
+
+    .portfolio__latest-works {
+        flex-direction: column;
+    }
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .nav__item {
+        padding: 0.5rem 0; /* Ajusta o espaçamento dos itens */
+    }
 }
