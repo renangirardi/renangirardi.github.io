@@ -355,19 +355,19 @@ img {
 }
 
 .about__content {
-    width: 60vw;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 24rem;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 3.2rem;
+    gap: 6.4rem;
 }
 
 .about__photo {
-    width: 80%;
+    width: 100%;
+    max-width: 20vw;
+    min-width: 20vw;
     flex-grow: 1;
 }
 
@@ -375,7 +375,7 @@ img {
     border-radius: 6px;
 }
 
-.about_info {
+.about__info {
     flex-grow: 2;
 }
 
@@ -763,7 +763,7 @@ img {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     .banner, .about, .ai, .cv, .portfolio, .footer {
         padding-left: 3.2rem;
         padding-right: 3.2rem;
@@ -776,8 +776,14 @@ img {
 
     .about__content {
         width: 100%;
+        padding: 0;
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .about__photo {
+        width: 100%;
+        max-width: 80%;
     }
 
     .cv__heading {
