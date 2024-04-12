@@ -121,11 +121,10 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-grow: 2;
 }
 
 .banner__text {
-    flex-grow: 2;
+    width: 100%;
 }
 
 .banner__heading {
@@ -155,9 +154,16 @@ img {
     background-color: #0C4160;
 }
 
+.banner__image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .banner__image {
     position: relative;
-    flex-grow: 1;
     height: 56.5rem;
     width: 55rem;
     max-width: 55rem;
