@@ -733,6 +733,39 @@ img {
     text-align: center;
 }
 
+.contact-page {
+    background-color: #C3CEDA;
+    width: 100%;
+    padding: 9.4rem;
+    color: #1e1e1e;
+}
+
+.contact-page__title {
+    font-weight: 800;
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    margin-bottom: 6.4rem;
+    text-align: center;
+}
+
+.contact-page__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6.4rem;
+}
+
+.contact-page__text {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    width: 20%;
+}
+
+.contact-page__text .material-symbols-outlined {
+    font-size: 4rem;
+}
+
 
 /******** WIP PAGE ********/
 
@@ -788,6 +821,19 @@ img {
     .about__content, .cv, .ai, .ai__content {
         flex-direction: column;
         gap: 6.4rem;
+    }
+
+    .contact-page {
+        padding: 5.2rem;
+    }
+    
+    .contact-page__content {
+        flex-direction: column-reverse;
+        gap: 3.2rem;
+    }
+
+    .contact-page__text {
+        width: 100%;
     }
 
     .about__content {
