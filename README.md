@@ -26,6 +26,10 @@ To run this website locally:
 
 Contributions to the website are welcome. If you have any suggestions or improvements, please fork the repository and create a pull request, or open an issue with the tag "enhancements".
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
 ## Acknowledgments
 
 - Icons provided by [Material Icons](https://fonts.google.com/icons).
