@@ -37,3 +37,21 @@ document.querySelector('.overlay').addEventListener('click', function() {
     document.querySelector('.mobile-menu').style.transform = 'translateY(-100%)';
     this.style.display = 'none';
   });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const targets = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('element'); 
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
+
+  targets.forEach(target => {
+    observer.observe(target);
+  });
+});
