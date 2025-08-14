@@ -15,7 +15,8 @@
     </div>
     <app-homepage-cv-item *ngFor="let item of educationItems" [icon]="item.icon" [title]="item.course"
       [subtitle]="item.university"></app-homepage-cv-item>
-
+    <app-homepage-cv-item [icon]="'School'" [title]="'+15 Certificates in different areas'"
+      [subtitle]="'Udemy, Alura, Unisinos, Franklin Covey, etc.'"></app-homepage-cv-item>
     <div class="cv__cta">
       <a routerLink="cv" class="banner__portfolio-link">View all education</a>
     </div>

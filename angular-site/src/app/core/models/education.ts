@@ -5,5 +5,6 @@ export interface Education {
   year: string,
   description: string,
   skills: string[],
-  logo: string
+  logo: string,
+  url: string
 }

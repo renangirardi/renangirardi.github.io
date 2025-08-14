@@ -1,14 +1,19 @@
 <section class="about-education-container__content">
-    <div>
-      Logo
+    <div class="about-education-container__logo-column">
+      <a [href]="educationItem.url" target="_blank"><img class="about-education-container__logo" [src]="educationItem.logo" alt="{{ educationItem.university }} logo"></a>
     </div>
-    <div class="about-education-container__text">
-      <div>Course: {{ educationItem.course }}</div>
-      <div>University: {{ educationItem.university }}</div>
-      <div>Year: {{ educationItem.year }}</div>
-      <div>Description: {{ educationItem.description }}</div>
+
+    <div class="about-education-container__text about-education-container__column">
+      <div class="cv__course">{{ educationItem.course }}</div>
+      <div class="cv__university">{{ educationItem.university }}</div>
+      <p class="cv__year">{{ educationItem.year }}</p>
+      <p>{{ educationItem.description }}</p>
     </div>
-    <div>
-      <div>Skills: {{ educationItem.skills.join(', ') }}</div>
+
+    <div class="about-education-container__column">
+      <div class="cv__skill-title">Skills</div>
+      <div class="cv__skills-list">
+        <app-tag *ngFor="let skill of educationItem.skills" [tag]="skill"></app-tag>
+      </div>
     </div>
 </section>

@@ -1,9 +1,29 @@
 .about-education-container__content {
     display: flex;
+
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 6.4rem;
+
+    margin-bottom: 6.4rem;
+}
+
+.about-education-container__logo-column {
+  flex: 2;
+  width: 100%;
+}
+
+.about-education-container__column {
+  flex: 3;
+  width: 100%;
+}
+
+.about-education-container__logo {
+    width: 100%;
+    background-color: white;
+    padding: 3.2rem;
+    border-radius: 1.6rem;
 }
 
 .about-education-container__text {
@@ -14,4 +34,38 @@
 
 .about-education-container__text .material-symbols-outlined {
     font-size: 4rem;
+}
+
+.cv__course {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
+.cv__skill-title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.cv__university {
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: 0px;
+}
+
+.cv__year {
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+
+  margin-bottom: 1.6rem;
+}
+
+.cv__skills-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.8rem;
 }
