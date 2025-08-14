@@ -1,0 +1,48 @@
+.header {
+    padding: 3.2rem 9.4rem 5.2rem;
+    background-color: #071330;
+    color: #fff;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__title>h1 {
+    padding: 1.4rem 0 1.2rem 1.4rem;
+}
+
+
+
+.nav__list {
+    list-style-type: none;
+    width: 37rem;
+    max-height: 3.2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav__item {
+    max-height: 3.2rem;
+    line-height: 3.2rem;
+    font-size: 1.6rem;
+    padding: 0 1.6rem;
+}
+
+.nav__item:hover {
+    border-bottom: #738FA7 2px solid;
+}

@@ -1,0 +1,93 @@
+/******** PORTFOLIO AREA ********/
+
+.portfolio {
+    background-color: #0C4160;
+    color: #fff;
+    width: 100%;
+    padding: 9rem 9.4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.portfolio__header {
+    margin-bottom: 6.4rem;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio__heading {
+    width: 100%;
+    font-weight: 800;
+    font-size: 4.4rem;
+    line-height: 6.4rem;
+}
+
+.portfolio__latest-works {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.portfolio__latest-works--item {
+    width: 100%;
+    height: 57.6rem;
+    background-color: red;
+    padding: 0 3.2rem 3.2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.portfolio__latest-works--item-1 {
+    position: relative;
+    background-image: linear-gradient(rgb(30,30,30,0.7), rgb(30,30,30,0.7)), url('/assets/images/portfolio-sticker-story.png');
+    background-color: #1e1e1e;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portfolio__latest-works--item-2 {
+    position: relative;
+    background-image: linear-gradient(rgb(30,30,30,0.7), rgb(30,30,30,0.7)), url('/assets/images/porfolio-personal-website.png');
+    background-color: #1e1e1e;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portfolio__latest-works--item-3 {
+    position: relative;
+    background-image: linear-gradient(rgb(30,30,30,0.7), rgb(30,30,30,0.7)), url('/assets/images/coming-soon.png');
+    background-color: #1e1e1e;
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+.portfolio__badge {
+    width:fit-content;
+    font-size: 1.6rem;
+    color: #1e1e1e;
+    background-color: #fff;
+    padding: 1rem 1.5rem 0.8rem;
+    border-radius: 20px;
+    margin-bottom: 2.4rem;
+}
+
+.portfolio__item {
+    font-size: 4rem;
+    font-weight: 800;
+}

@@ -1,0 +1,71 @@
+/******** ABOUT AREA ********/
+
+.about {
+    background-color: #C3CEDA;
+    color: #1e1e1e;
+    width: 100%;
+    padding: 9rem 9.4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__heading {
+    font-weight: 800;
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    margin-bottom: 6.4rem;
+}
+
+.about__content {
+    padding: 0 24rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6.4rem;
+}
+
+.about__photo {
+    width: 100%;
+    max-width: 20vw;
+    min-width: 20vw;
+    flex-grow: 1;
+}
+
+.about__photo img {
+    border-radius: 6px;
+}
+
+.about__info {
+    flex-grow: 2;
+}
+
+.about__name {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    margin-bottom: 1.8rem ;
+}
+
+.about__bio {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    margin-bottom: 5.8rem ;
+}
+
+.about__link {
+    background-color: #fff;
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 1.8rem 3.6rem 1.6rem;
+    border-radius: 6px;
+    box-shadow: 2px 1px 5px #888888;
+}
+
+.about__link:hover, .about__link:active, .about__link:focus {
+    color: #fff;
+    background-color: #0C4160;
+}

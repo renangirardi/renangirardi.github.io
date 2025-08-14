@@ -1,1 +1,331 @@
-/* You can add global styles to this file, and also import other style files */
+/******** DEFAULTS ********/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Epilogue', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    font-weight: 400;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover, a:active, a:focus {
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.banner__portfolio-link {
+    background-color: #4A90E2;
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 1.8rem 3.6rem 1.6rem;
+    border-radius: 6px;
+    box-shadow: 2px 1px 5px #1e1e1e;
+}
+
+.banner__portfolio-link:hover, .banner__portfolio-link:active, .banner__portfolio-link:focus {
+    background-color: #0C4160;
+}
+
+.header__contact-link {
+
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 1.8rem 3.6rem 1.6rem;
+    border-radius: 6px;
+    border: solid 1px #738FA7;
+    text-wrap: nowrap;
+}
+
+.header__contact-link:hover {
+    background-color: #738FA7;
+}
+
+/******** INNER PAGES ********/
+
+.inner-page__heading {
+    text-align: center;
+}
+
+.contact-page {
+    background-color: #C3CEDA;
+    width: 100%;
+    padding: 9.4rem;
+    color: #1e1e1e;
+}
+
+.contact-page__title {
+    font-weight: 800;
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    margin-bottom: 6.4rem;
+    text-align: center;
+}
+
+.contact-page__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6.4rem;
+}
+
+.contact-page__text {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    width: 20%;
+}
+
+.contact-page__text .material-symbols-outlined {
+    font-size: 4rem;
+}
+
+
+/******** WIP PAGE ********/
+
+.main-wip-page {
+    background-color: #0C4160;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    padding: 0 9.4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6.4rem;
+}
+
+.wip-message {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.wip-image {
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/******** FADE-IN ANIMATION ********/
+
+@keyframes fadeInSlideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in {
+    opacity: 0;
+  }
+
+  .element {
+    opacity: 0;
+    animation-name: fadeInSlideDown;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+
+
+
+/******** MOBILE STYLES ********/
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    .banner__heading {
+        font-size: 4.8rem;
+        line-height: 6rem;
+    }
+
+    .about__heading, .cv__heading h2, .portfolio__heading {
+        font-size: 3.6rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .banner, .about, .ai, .cv, .portfolio, .footer {
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
+    }
+
+    .about__content, .cv, .ai, .ai__content {
+        flex-direction: column;
+        gap: 6.4rem;
+    }
+
+    .contact-page {
+        padding: 5.2rem;
+    }
+
+    .contact-page__content {
+        flex-direction: column-reverse;
+        gap: 3.2rem;
+    }
+
+    .contact-page__text {
+        width: 100%;
+    }
+
+    .about__content {
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about__photo {
+        width: 100%;
+        max-width: 80%;
+    }
+
+    .cv__heading {
+        margin-bottom: 0;
+    }
+
+    .cv__cta {
+        margin-top: 3.2rem;
+    }
+
+    .banner__content {
+        padding-top: 24rem;
+        flex-direction: column-reverse;
+        gap: 6.4rem;
+    }
+
+    .banner__image {
+        display: none;
+       width: 80vw;
+    }
+
+    .image-slider {
+        width: 55%;
+        height: auto;
+        aspect-ratio: 3 / 4;
+        top: auto;
+        bottom: 8rem;
+    }
+
+    .circle-background {
+        height: auto;
+        width: 80%;
+        aspect-ratio: 1 / 1;
+    }
+
+    .cv__column {
+        width: 100%;
+    }
+
+    .portfolio__latest-works {
+        flex-direction: column;
+    }
+
+    .portfolio__latest-works--item-3 {
+        display: none;
+    }
+
+    .header .header__contact-link, .nav {
+        display: none;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .nav__item {
+        padding: 0.5rem 0;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+
+    .material-symbols-outlined {
+        font-size: 40px !important;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background: #0C4160;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1500;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(30, 30, 30, 0.7);
+        display: none;
+        z-index: 1400;
+    }
+
+    .mobile-menu ul {
+        list-style-type: none;
+        padding: 3.2rem;
+    }
+
+    .mobile-menu ul li a {
+        font-size: 2.4rem;
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #close-menu {
+        display: block;
+        text-align: right;
+        padding: 3.2rem;
+    }
+
+    .wip-image {
+        width: 60vw;
+        height: auto;
+    }
+}
