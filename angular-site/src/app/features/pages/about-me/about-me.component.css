@@ -1,0 +1,14 @@
+.about-education-container {
+    background-color: #C3CEDA;
+    width: 100%;
+    padding: 9.4rem;
+    color: #1e1e1e;
+}
+
+.about-education-container__title {
+    font-weight: 800;
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    margin-bottom: 6.4rem;
+    text-align: center;
+}

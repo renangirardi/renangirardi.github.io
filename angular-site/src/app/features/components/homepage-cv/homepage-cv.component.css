@@ -29,31 +29,6 @@
     margin-top: 1.6rem;;
 }
 
-.cv__column--info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.cv__column--icon {
-    font-size: 3.2rem !important;
-    margin-right: 1.6rem;
-
-    color: #4A90E2;
-}
-
-.cv__course {
-    font-weight: 600;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-}
-
-.cv__university {
-    font-weight: 400;
-    font-size: 1.6rem;
-}
-
 .cv__heading {
     width: 100%;
     display: flex;
@@ -84,9 +59,6 @@
     color: #fff;
 }
 
-.divider {
-    height: 1px;
-    width: 100%;
-    margin-top: 1.6rem;
-    background-color: #738FA780;
+app-homepage-cv-item {
+  width: 100%;
 }

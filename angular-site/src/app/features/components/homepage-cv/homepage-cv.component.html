@@ -1,77 +1,24 @@
 <section class="cv">
   <div class="cv__column">
     <div class="cv__heading">
-      <h2>Education</h2>
-    </div>
-    <div class="cv__column--item">
-      <div>
-        <span class="material-symbols-outlined cv__column--icon">code_blocks</span>
-      </div>
-      <div class="cv__column--info">
-        <span class="cv__course">Associate in Systems
-          Analysis and Development</span>
-        <span class="cv__university">Universidade do Rio do Vale dos Sinos (Unisinos)</span>
-      </div>
-    </div>
-    <div class="divider"></div>
-    <div class="cv__column--item">
-      <div>
-        <span class="material-symbols-outlined cv__column--icon">work</span>
-      </div>
-      <div class="cv__column--info">
-        <span class="cv__course">Bachelor of Science in Business Administration</span>
-        <span class="cv__university">Universidade Federal do Rio Grande do Sul (UFRGS)</span>
-      </div>
-    </div>
-    <div class="divider"></div>
-    <div class="cv__column--item">
-      <div>
-        <span class="material-symbols-outlined cv__column--icon">School</span>
-      </div>
-      <div class="cv__column--info">
-        <span class="cv__course">+15 Certificates in different areas</span>
-        <span class="cv__university">Udemy, Unisinos, Franklin Covey, etc.</span>
-      </div>
-    </div>
-    <div class="cv__cta">
-      <a routerLink="cv" class="banner__portfolio-link">View all education</a>
-    </div>
-  </div>
-  <div class="cv__column">
-    <div class="cv__heading">
       <h2>Experience</h2>
     </div>
-    <div class="cv__column--item">
-      <div>
-        <span class="material-symbols-outlined cv__column--icon">code</span>
-      </div>
-      <div class="cv__column--info">
-        <span class="cv__course">Software Engineer</span>
-        <span class="cv__university">Dell Technologies</span>
-      </div>
-    </div>
-    <div class="divider"></div>
-    <div class="cv__column--item">
-      <div>
-        <span class="material-symbols-outlined cv__column--icon">dentistry</span>
-      </div>
-      <div class="cv__column--info">
-        <span class="cv__course">Co-founder - Manager</span>
-        <span class="cv__university">Da Vinci Odontologia</span>
-      </div>
-    </div>
-    <div class="divider"></div>
-    <div class="cv__column--item">
-      <div>
-        <span class="material-symbols-outlined cv__column--icon">local_cafe</span>
-      </div>
-      <div class="cv__column--info">
-        <span class="cv__course">Founder - Consultant</span>
-        <span class="cv__university">CUP Business Consulting</span>
-      </div>
-    </div>
+    <app-homepage-cv-item *ngFor="let item of experienceItems" [icon]="item.icon" [title]="item.job"
+      [subtitle]="item.company"></app-homepage-cv-item>
     <div class="cv__cta">
       <a routerLink="cv" class="banner__portfolio-link">View the whole experience</a>
     </div>
   </div>
+  <div class="cv__column">
+    <div class="cv__heading">
+      <h2>Education</h2>
+    </div>
+    <app-homepage-cv-item *ngFor="let item of educationItems" [icon]="item.icon" [title]="item.course"
+      [subtitle]="item.university"></app-homepage-cv-item>
+
+    <div class="cv__cta">
+      <a routerLink="cv" class="banner__portfolio-link">View all education</a>
+    </div>
+  </div>
+
 </section>

@@ -1,0 +1,17 @@
+.about-education-container__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6.4rem;
+}
+
+.about-education-container__text {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    width: 20%;
+}
+
+.about-education-container__text .material-symbols-outlined {
+    font-size: 4rem;
+}
