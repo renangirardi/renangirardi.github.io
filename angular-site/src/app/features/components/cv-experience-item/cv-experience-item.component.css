@@ -1,0 +1,72 @@
+.cv-experience-item__container, .cv-experience-item__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+  gap: 12px;
+  width: 100%;
+}
+
+.cv-experience-item__container {
+  margin-bottom: 6.4rem;
+}
+
+
+.logo_container {
+  flex: 1;
+  background-color: #0C4160;
+  padding: 1.6rem;
+  border-radius: 1.6rem;
+  max-width: 120px;
+}
+
+.cv-experience-item__info {
+  flex: 2;
+}
+
+.cv-experience-item__description-container {
+  flex: 6;
+}
+
+.cv-experience-item__left {
+  flex: 2;
+}
+
+.cv-experience-item__header {
+
+  margin-bottom: 1.6rem;
+}
+
+.cv-experience-item__job {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
+.cv-experience-item__company,
+.cv-experience-item__year,
+.cv-experience-item__city {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.cv-experience-item__description{
+  margin-left: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+}
+
+.cv-experience-item__description-item {
+  margin-bottom: 2rem;
+  width: 100%;
+  list-style-type: square;
+  line-height: 2.4rem;
+}
+
+.vertical-divider {
+  width: 1px;
+  background-color: lightgray;
+  align-self: stretch;
+}

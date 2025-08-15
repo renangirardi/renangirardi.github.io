@@ -62,3 +62,14 @@
 app-homepage-cv-item {
   width: 100%;
 }
+
+.divider {
+    height: 1px;
+    width: 100%;
+    margin-top: 1.6rem;
+    background-color: #738FA780;
+}
+
+.hidden {
+    display: none;
+}

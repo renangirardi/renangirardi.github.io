@@ -17,7 +17,9 @@ export class ExperienceService {
         'Served as Focal Point for A/B Testing projects, coordinating development, QA, and performance analysis.',
         'Designed and developed internal tools for test tracking and management using the MEAN stack (MongoDB, Express.js, Angular, Node.js), improving team productivity and operational visibility.',
         'Applied UX research, interface design, and usability testing to enhance internal platform usability.'
-      ]
+      ],
+      skills: ['JavaScript', 'Adobe Target', 'Angular', 'UX design', 'TypeScript'],
+      logo: 'dell_logo.png'
     },
     {
       icon: 'design_services',
@@ -30,7 +32,9 @@ export class ExperienceService {
         'Contributed to email marketing, web materials, wireframes, and UI/UX documentation.',
         'Developed a portal for product designers using WordPress, supporting the dissemination of learning materials and collaborative resources.',
         'Received intensive training in UI, UX, agile, prototyping, and human-centered design.'
-      ]
+      ],
+      skills: ['WordPress', 'UI design', 'UX design', 'Figma', 'Prototyping'],
+      logo: 'dell_logo.png'
     },
     {
       icon: 'dentistry',
@@ -42,7 +46,9 @@ export class ExperienceService {
         'Led business management, marketing strategies, client relationship, and digital platforms including website and social media.',
         'Managed digital advertising campaigns with Google Ads and optimized online presence.',
         'Developed and maintained the clinics corporate website using WordPress, contributing to digital visibility and client acquisition.'
-      ]
+      ],
+      skills: ['WordPress', 'Digital Marketing', 'CRM', 'People Management', 'Business Strategy'],
+      logo: 'davinciodontologia_logo.png'
     },
     {
       icon: 'local_cafe',
@@ -54,7 +60,9 @@ export class ExperienceService {
         'Provided consulting services for small businesses in the areas of marketing, operations, and technology.',
         'Developed customized solutions to improve client business processes and drive growth.',
         'Conducted workshops and training sessions on digital marketing strategies and tools.'
-      ]
+      ],
+      skills: ['Wordpress', 'Marketing', 'Operations', 'Project Management', 'Problem Solving'],
+      logo: 'cupconsultoria_logo.png'
     }
   ];
 

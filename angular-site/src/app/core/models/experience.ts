@@ -5,4 +5,6 @@ export interface Experience {
   year: string;
   city: string;
   description: string[];
+  skills: string[];
+  logo: string;
 }

@@ -1,0 +1,24 @@
+<div class="cv-experience-item__container">
+  <div class="cv-experience-item__left">
+    <div class="cv-experience-item__header">
+      <div class="logo_container">
+        <img [src]="'assets/images/' + experienceItem.logo" alt="{{experienceItem.company}} logo" class="cv-experience-item__logo">
+      </div>
+      <div class="cv-experience-item__info">
+        <div class="cv-experience-item__job"> {{experienceItem.job}} </div>
+        <div class="cv-experience-item__company"> {{experienceItem.company}} </div>
+        <div class="cv-experience-item__year"> {{experienceItem.year}} </div>
+        <div class="cv-experience-item__city"> {{experienceItem.city}} </div>
+      </div>
+    </div>
+    <div>
+      <app-tag *ngFor="let skill of experienceItem.skills" [tag]="skill"></app-tag>
+    </div>
+  </div>
+  <div class="vertical-divider"></div>
+  <div class="cv-experience-item__description-container">
+      <ul class="cv-experience-item__description">
+        <li *ngFor="let description of experienceItem.description" class="cv-experience-item__description-item">{{description}}</li>
+      </ul>
+  </div>
+</div>

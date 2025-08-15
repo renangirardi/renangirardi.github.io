@@ -3,8 +3,11 @@
     <div class="cv__heading">
       <h2>Experience</h2>
     </div>
-    <app-homepage-cv-item *ngFor="let item of experienceItems" [icon]="item.icon" [title]="item.job"
-      [subtitle]="item.company"></app-homepage-cv-item>
+    <ng-container *ngFor="let item of experienceItems">
+      <app-homepage-cv-item [icon]="item.icon" [title]="item.job"
+        [subtitle]="item.company"></app-homepage-cv-item>
+      <div class="divider" [ngClass]="{'hidden': item === experienceItems[experienceItems.length - 1]}"></div>
+    </ng-container>
     <div class="cv__cta">
       <a routerLink="cv" class="banner__portfolio-link">View the whole experience</a>
     </div>
@@ -13,8 +16,11 @@
     <div class="cv__heading">
       <h2>Education</h2>
     </div>
-    <app-homepage-cv-item *ngFor="let item of educationItems" [icon]="item.icon" [title]="item.course"
-      [subtitle]="item.university"></app-homepage-cv-item>
+    <ng-container *ngFor="let item of educationItems">
+      <app-homepage-cv-item [icon]="item.icon" [title]="item.course"
+        [subtitle]="item.university"></app-homepage-cv-item>
+        <div class="divider"></div>
+    </ng-container>
     <app-homepage-cv-item [icon]="'School'" [title]="'+15 Certificates in different areas'"
       [subtitle]="'Udemy, Alura, Unisinos, Franklin Covey, etc.'"></app-homepage-cv-item>
     <div class="cv__cta">
