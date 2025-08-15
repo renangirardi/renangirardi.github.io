@@ -1,0 +1,33 @@
+.cv-education-certificate {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1.6rem;
+
+  padding: 1.6rem;
+
+  background-color: #738fa7;
+  color: white;
+  border-radius: 1.6rem;
+}
+
+.cv-education-certificate:hover {
+  background-color: #5a7b92;
+}
+
+.cv-education-certificate__title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+.cv-education-certificate__year {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+.cv-education-certificate__logo {
+  width: 6rem;
+  border-radius: 50%;
+}
