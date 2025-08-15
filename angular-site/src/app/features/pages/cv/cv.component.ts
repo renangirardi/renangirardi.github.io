@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { InnerBannerComponent } from '../../components/inner-banner/inner-banner.component';
-import { InnerWipContentComponent } from '../../components/inner-wip-content/inner-wip-content.component';
+import { CvEducationComponent } from '../../components/cv-education/cv-education.component';
 
 @Component({
   selector: 'app-cv',
-  imports: [InnerBannerComponent, InnerWipContentComponent],
+  imports: [InnerBannerComponent, CvEducationComponent],
   templateUrl: './cv.component.html',
   styleUrl: './cv.component.css'
 })

@@ -3,12 +3,13 @@ import { Education } from '../../../core/models/education';
 import { CommonModule } from '@angular/common';
 import { TagComponent } from '../tag/tag.component';
 
+
 @Component({
-  selector: 'app-about-education-item',
+  selector: 'app-cv-education-item',
   imports: [CommonModule, TagComponent],
-  templateUrl: './about-education-item.component.html',
-  styleUrl: './about-education-item.component.css'
+  templateUrl: './cv-education-item.component.html',
+  styleUrl: './cv-education-item.component.css'
 })
-export class AboutEducationItemComponent {
+export class CvEducationItemComponent {
   @Input() educationItem!: Education;
 }

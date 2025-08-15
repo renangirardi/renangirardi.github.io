@@ -1,4 +1,4 @@
-.about-education-container__content {
+.cv-education-container__content {
     display: flex;
 
     flex-direction: row;
@@ -9,30 +9,30 @@
     margin-bottom: 6.4rem;
 }
 
-.about-education-container__logo-column {
+.cv-education-container__logo-column {
   flex: 2;
   width: 100%;
 }
 
-.about-education-container__column {
+.cv-education-container__column {
   flex: 3;
   width: 100%;
 }
 
-.about-education-container__logo {
+.cv-education-container__logo {
     width: 100%;
     background-color: white;
     padding: 3.2rem;
     border-radius: 1.6rem;
 }
 
-.about-education-container__text {
+.cv-education-container__text {
     font-size: 1.6rem;
     line-height: 3.2rem;
     width: 20%;
 }
 
-.about-education-container__text .material-symbols-outlined {
+.cv-education-container__text .material-symbols-outlined {
     font-size: 4rem;
 }
 
