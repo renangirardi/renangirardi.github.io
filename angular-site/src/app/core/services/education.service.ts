@@ -71,14 +71,20 @@ export class EducationService {
 
   private certificates: Certificate[] = [
     {
-      name: 'Angular: ciclo de vida',
+      name: 'Angular: evoluindo com formulários e roteamento',
       year: 2023,
+      institution: 'alura',
+      url: 'https://cursos.alura.com.br/formalCertificate/da4d66d6-5705-484f-89f3-56a0a6025414'
+    },
+    {
+      name: 'Angular: ciclo de vida',
+      year: 2025,
       institution: 'alura',
       url: 'https://cursos.alura.com.br/formalCertificate/1837de47-b932-4a5e-9fd4-dd4585128655'
     },
     {
       name: 'Node.js: testes unitários e de integração',
-      year: 2023,
+      year: 2025,
       institution: 'alura',
       url: 'https://cursos.alura.com.br/formalCertificate/556373ee-2685-4558-b403-a9154fd65795'
     },

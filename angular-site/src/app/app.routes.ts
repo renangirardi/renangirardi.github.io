@@ -19,7 +19,7 @@ export const routes: Routes = [
   {
     path: 'cv',
     component: CvComponent,
-    title: 'Renan Girardi - CV'
+    title: 'Renan Girardi - Curriculum vitæ'
   },
   {
     path: 'portfolio',
