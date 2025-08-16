@@ -1,8 +1,15 @@
-.cv-education-container {
+.cv-summary-container {
     background-color: #C3CEDA;
     width: 100%;
     padding: 9.4rem;
     color: #1e1e1e;
+}
+
+.cv-education-container {
+    background-color: #0C4160;
+    width: 100%;
+    padding: 9.4rem;
+    color: #fff;
 }
 
 .cv-experience-container {

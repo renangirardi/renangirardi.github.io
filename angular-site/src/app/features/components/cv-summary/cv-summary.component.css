@@ -1,0 +1,51 @@
+.cv-summary-container__title {
+    font-weight: 800;
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    margin-bottom: 6.4rem;
+    text-align: center;
+}
+
+.cv-summary-container__content {
+  display: flex;
+  margin-bottom: 4rem;
+  gap: 2rem;
+}
+
+.cv-summary-container__intro {
+  flex: 2;
+}
+
+.cv-summary-container__img {
+  flex: 1;
+}
+
+.cv-summary-container__skills-list {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  position: relative;
+}
+
+.cv-summary-container__skills-list__column {
+  width: 100%;
+}
+
+.cv-summary-container__skills-list__title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.cv-summary-container__skills-list__title .divider {
+  flex: 4;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin: 2.4rem 0 1.6rem;
+    flex: 1.5;
+}
