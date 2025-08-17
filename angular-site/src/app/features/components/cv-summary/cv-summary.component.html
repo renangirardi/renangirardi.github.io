@@ -1,14 +1,14 @@
-<section>
+<section class="cv-summary-container">
   <h2 class="cv-summary-container__title">Summary</h2>
-  <div class="cv-summary-container__content">
-    <div class="cv-summary-container__intro">
+  <div class="cv-summary-container__content container">
+    <div class="cv-summary-container__intro col-7">
       <div>
         <h3>Career Objectives</h3>
         <p>To contribute as a Frontend Developer creating scalable and high-performance web applications. My goal is to
           apply best practices in modern frontend development while continuously improving user experience and
           collaborating with cross-functional teams.</p>
       </div>
-      <div>
+      <div class="cv-summary-container__intro__text">
         <h3>Professional Summary</h3>
         <p>Frontend Developer with over a decade of experience in web development, beginning in 2010. Strong foundation
           in JavaScript, TypeScript, UX/UI, and scalable architecture. Experienced in building responsive, accessible,
@@ -19,13 +19,14 @@
           delivering innovative solutions that drive business success.</p>
       </div>
     </div>
-    <div class="cv-summary-container__img">Foto</div>
+    <div class="col-1"></div>
+    <div class="cv-summary-container__img col-4">Foto</div>
   </div>
-  <div class="cv-summary-container__skills">
-    <h3>Core Competencies</h3>
+  <div class="cv-summary-container__skills container">
+    <h3 class="col-12">Core Competencies</h3>
   </div>
-  <div class="cv-summary-container__skills-list">
-    <div class="cv-summary-container__skills-list__column">
+  <div class="cv-summary-container__skills-list container">
+    <div class="cv-summary-container__skills-list__column col-6">
       <div class="cv-summary-container__skills-list__title">
         <h4>Technical Skills</h4>
         <div class="divider"></div>
@@ -41,7 +42,7 @@
       <app-skill-bar [progressWidth]="'20%'" [label]="'Next.js'" [color]="0"></app-skill-bar>
       <app-skill-bar [progressWidth]="'50%'" [label]="'MongoDB'" [color]="0"></app-skill-bar>
     </div>
-    <div class="cv-summary-container__skills-list__column">
+    <div class="cv-summary-container__skills-list__column col-6">
       <div>
         <div class="cv-summary-container__skills-list__title">
           <h4>Soft Skills</h4>

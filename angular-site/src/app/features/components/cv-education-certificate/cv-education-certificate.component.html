@@ -1,5 +1,5 @@
 <div class="cv-education-certificate">
-  <div>
+  <div class="cv-education-certificate__logo-container">
     <img
       class="cv-education-certificate__logo"
       [src]="`/assets/images/${certificate.institution}_logo.jpeg`"
@@ -7,7 +7,7 @@
       title="{{ certificate.institution }}"
     >
   </div>
-  <div>
+  <div class="cv-education-certificate__info">
     <a [href]="certificate.url" target="_blank">
       <h4 class="cv-education-certificate__title">{{ certificate.name }}</h4>
     </a>

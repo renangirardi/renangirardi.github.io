@@ -13,9 +13,9 @@ export class SkillBarComponent implements AfterViewInit {
   @Input() color!: number;
 
   colors: Record<number, string> = {
-    0: '#007ACC',
-    1: '#F7DF1E',
-    2: '#E44D26',
+    0: '#071330',
+    1: '#0C4160',
+    2: '#4A90E2',
   };
 
   ngAfterViewInit() {

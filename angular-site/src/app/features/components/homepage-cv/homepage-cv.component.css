@@ -2,21 +2,7 @@
 
 .cv {
     width: 100%;
-    padding: 9rem 9.4rem;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 6.4rem;
-}
-
-.cv__column {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    padding: 9rem 0;
     align-items: flex-start;
 }
 
@@ -39,12 +25,6 @@
     margin-bottom: 6.4rem;
 }
 
-.cv__heading h2 {
-    font-weight: 800;
-    font-size: 4.4rem;
-    line-height: 6.4rem;
-}
-
 .cv__cta {
     width: 100%;
     margin-top: 6.4rem;
@@ -61,15 +41,4 @@
 
 app-homepage-cv-item {
   width: 100%;
-}
-
-.divider {
-    height: 1px;
-    width: 100%;
-    margin-top: 1.6rem;
-    background-color: #738FA780;
-}
-
-.hidden {
-    display: none;
 }

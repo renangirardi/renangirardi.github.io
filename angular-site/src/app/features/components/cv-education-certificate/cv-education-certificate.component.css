@@ -15,6 +15,10 @@
   background-color: #5a7b92;
 }
 
+.cv-education-certificate__logo-container{
+  flex-shrink: 0;
+}
+
 .cv-education-certificate__title {
   font-weight: 600;
   font-size: 1.6rem;

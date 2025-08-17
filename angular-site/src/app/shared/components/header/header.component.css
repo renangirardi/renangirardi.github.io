@@ -1,6 +1,5 @@
 .header {
-    padding: 3.2rem 9.4rem 5.2rem;
-    background-color: #071330;
+    padding: 3.2rem 0 5.2rem;
     color: #fff;
     width: 100%;
 
@@ -11,17 +10,17 @@
 }
 
 .header__title {
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 2.4rem;
-
     display: flex;
     flex-direction: row;
     align-items: center;
+    line-height: 3.2;
 }
 
 .header__title>h1 {
     padding: 1.4rem 0 1.2rem 1.4rem;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 2.4rem;
 }
 
 

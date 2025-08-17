@@ -1,4 +1,8 @@
 <section class="cv-experience-container">
   <h2 class="cv-experience-container__title">Experience</h2>
-  <app-cv-experience-item *ngFor="let item of experienceItems" [experienceItem]="item"></app-cv-experience-item>
+  <div class="container">
+    <div class="col-12">
+      <app-cv-experience-item *ngFor="let item of experienceItems" [experienceItem]="item"></app-cv-experience-item>
+    </div>
+  </div>
 </section>

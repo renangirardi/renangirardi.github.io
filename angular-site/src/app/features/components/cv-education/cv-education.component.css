@@ -1,18 +1,6 @@
 .cv-education-certificates__title {
-    font-weight: 800;
-    font-size: 4.2rem;
-    line-height: 6.4rem;
     margin-bottom: 6.4rem;
     text-align: center;
-}
-
-.cv-education-certificates__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1.6rem;
-
-  flex-wrap: wrap;
 }
 
 .cv-education-container__title {
@@ -23,3 +11,7 @@
     text-align: center;
 }
 
+.cv-education-certificates__container{
+  align-items: center;
+  padding: 0;
+}

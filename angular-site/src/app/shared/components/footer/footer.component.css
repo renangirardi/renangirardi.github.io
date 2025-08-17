@@ -1,8 +1,7 @@
 .footer {
-    background-color: #071330;
     color: #fff;
     width: 100%;
-    padding: 9rem 9.4rem 5.2rem;
+    padding: 9rem 0 5.2rem;
 
     display: flex;
     flex-direction: column;
@@ -19,16 +18,15 @@
 }
 
 .footer__title {
-    font-weight: 700;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
-
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .footer__title>h1 {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 2.4rem;
     padding: 0.5rem 0 0 1.4rem;
 }
 
