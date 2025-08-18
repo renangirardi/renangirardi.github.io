@@ -32,18 +32,3 @@
 .about__bio {
     margin-bottom: 5.8rem;
 }
-
-.about__link {
-    background-color: #fff;
-    font-size: 1.4rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    padding: 1.8rem 3.6rem 1.6rem;
-    border-radius: 6px;
-    box-shadow: 2px 1px 5px #888888;
-}
-
-.about__link:hover, .about__link:active, .about__link:focus {
-    color: #fff;
-    background-color: #0C4160;
-}

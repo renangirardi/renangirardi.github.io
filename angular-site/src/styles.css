@@ -140,34 +140,7 @@ img {
   background-color: var(--color-background);
 }
 
-.banner__portfolio-link {
-    background-color: #4A90E2;
-    font-size: 1.4rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    padding: 1.8rem 3.6rem 1.6rem;
-    border-radius: 6px;
-    box-shadow: 2px 1px 5px #1e1e1e;
-}
-
-.banner__portfolio-link:hover, .banner__portfolio-link:active, .banner__portfolio-link:focus {
-    background-color: #0C4160;
-}
-
-.header__contact-link {
-
-    font-size: 1.4rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    padding: 1.8rem 3.6rem 1.6rem;
-    border-radius: 6px;
-    border: solid 1px #738FA7;
-    text-wrap: nowrap;
-}
-
-.header__contact-link:hover {
-    background-color: #738FA7;
-}
+/* MISC */
 
 .divider {
     height: 1px;

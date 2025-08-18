@@ -1,11 +1,11 @@
-<section class="banner">
-  <div class="banner__content">
+<section class="banner container">
+  <div class="banner__content col-12">
     <div class="banner__text">
       <h2 class="banner__heading">Welcome,
         <br>I'm glad you're here
       </h2>
       <p class="banner__description">Learn more about my work by checking out some of my personal projects.</p>
-      <a routerLink="portfolio" class="banner__portfolio-link">See the portfolio</a>
+      <app-button [style]="'primary'" [size]="'medium'" [text]="'View my portfolio'" routerLink="portfolio"></app-button>
     </div>
     <div class="banner__image-container">
       <div class="banner__image">
