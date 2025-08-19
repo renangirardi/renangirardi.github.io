@@ -6,6 +6,10 @@
   margin-bottom: 1.6rem;
 }
 
+.about-me-content__row-1, .about-me-content__row-2, .about-me-content__row-3 {
+  align-items: center;
+}
+
 .about-me-content__text p {
   margin-bottom: 1.6rem;
   text-align: justify;
