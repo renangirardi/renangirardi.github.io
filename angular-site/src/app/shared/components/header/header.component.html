@@ -60,7 +60,7 @@
     </ul>
   </nav>
   <div class="col-3">
-    <app-button [style]="'secondary'" [size]="'medium'" [text]="'Contact'" routerLink="contact"></app-button>
+    <app-button [style]="'secondary'" [size]="'medium'" [text]="'Contact'" [routerLink]="['contact']"></app-button>
   </div>
   <div class="nav-mobile" *ngIf="isMobileViewport">
     <span class="material-symbols-outlined" id="menu-toggle">menu</span>

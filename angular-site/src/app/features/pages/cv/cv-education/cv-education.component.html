@@ -2,9 +2,19 @@
   <h2 class="cv-education-container__title col-12">Education</h2>
   <app-cv-education-item class="col-12" *ngFor="let item of educationItems" [educationItem]="item"></app-cv-education-item>
   <div class="col-12">
-    <h3 class="cv-education-certificates__title">Certificates</h3>
+    <div class="cv-education-certificates__header">
+      <h3 class="cv-education-certificates__title">Certificates</h3>
+      <div class="cv-education-certificates__sort">
+        <label for="sort-by">Sort By:</label>
+        <select id="sort-by" (change)="sortCertificates($event)">
+          <option value="year">Year</option>
+          <option value="name">Name</option>
+          <option value="institution">Institution</option>
+        </select>
+      </div>
+    </div>
     <div class="cv-education-certificates__container container">
-      <app-cv-education-certificate class="col-4" *ngFor="let certificate of certificates" [certificate]="certificate"></app-cv-education-certificate>
+      <app-cv-education-certificate class="col-4" *ngFor="let certificate of sortedCertificates" [certificate]="certificate"></app-cv-education-certificate>
     </div>
   </div>
 </section>

@@ -71,8 +71,14 @@ export class EducationService {
 
   private certificates: Certificate[] = [
     {
+      name: 'Angular: explorando testes de unidade e integração',
+      year: 2025,
+      institution: 'alura',
+      url: 'https://cursos.alura.com.br/formalCertificate/32278104-252c-4240-b43f-22dc13de19f4'
+    },
+    {
       name: 'Angular: evoluindo com formulários e roteamento',
-      year: 2023,
+      year: 2025,
       institution: 'alura',
       url: 'https://cursos.alura.com.br/formalCertificate/da4d66d6-5705-484f-89f3-56a0a6025414'
     },
