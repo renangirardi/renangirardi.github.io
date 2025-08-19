@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
-import { Experience } from '../../../core/models/experience';
-import { ExperienceService } from '../../../core/services/experience.service';
 import { CommonModule } from '@angular/common';
-import { CvExperienceItemComponent } from '../cv-experience-item/cv-experience-item.component';
+
+import { Experience } from '../../../../core/models/experience';
+
+import { ExperienceService } from '../../../../core/services/experience.service';
+
+import { CvExperienceItemComponent } from './cv-experience-item/cv-experience-item.component';
 
 @Component({
   selector: 'app-cv-experience',

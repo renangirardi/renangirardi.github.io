@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { HomepageCvItemComponent } from '../homepage-cv-item/homepage-cv-item.component';
 import { CommonModule } from '@angular/common';
-import { Education } from '../../../core/models/education';
-import { Experience } from '../../../core/models/experience';
-import { EducationService } from '../../../core/services/education.service';
-import { ExperienceService } from '../../../core/services/experience.service';
+
+import { Education } from '../../../../core/models/education';
+import { Experience } from '../../../../core/models/experience';
+
+import { EducationService } from '../../../../core/services/education.service';
+import { ExperienceService } from '../../../../core/services/experience.service';
+
+import { HomepageCvItemComponent } from './homepage-cv-item/homepage-cv-item.component';
 
 @Component({
   selector: 'app-homepage-cv',

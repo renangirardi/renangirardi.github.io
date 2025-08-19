@@ -153,13 +153,6 @@ img {
     display: none;
 }
 
-/******** INNER PAGES ********/
-
-.inner-page__heading {
-    text-align: center;
-}
-
-
 /******** FADE-IN ANIMATION ********/
 
 @keyframes fadeInSlideDown {

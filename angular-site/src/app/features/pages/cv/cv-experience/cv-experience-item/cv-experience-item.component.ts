@@ -1,7 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { Experience } from '../../../core/models/experience';
 import { CommonModule } from '@angular/common';
-import { TagComponent } from '../../../shared/components/tag/tag.component';
+
+import { Experience } from '../../../../../core/models/experience';
+
+import { TagComponent } from '../../../../../shared/components/tag/tag.component';
 
 @Component({
   selector: 'app-cv-experience-item',

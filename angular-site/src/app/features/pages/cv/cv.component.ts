@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
-import { InnerBannerComponent } from '../../components/inner-banner/inner-banner.component';
-import { CvEducationComponent } from '../../components/cv-education/cv-education.component';
-import { CvExperienceComponent } from '../../components/cv-experience/cv-experience.component';
-import { CvSummaryComponent } from '../../components/cv-summary/cv-summary.component';
+import { InnerBannerComponent } from '../../../shared/components/inner-banner/inner-banner.component';
+import { CvEducationComponent } from './cv-education/cv-education.component';
+import { CvExperienceComponent } from './cv-experience/cv-experience.component';
+import { CvSummaryComponent } from './cv-summary/cv-summary.component';
 
 @Component({
   selector: 'app-cv',

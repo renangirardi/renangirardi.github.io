@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { Education } from '../../../core/models/education';
+import { Education } from '../../../../../core/models/education';
 import { CommonModule } from '@angular/common';
-import { TagComponent } from '../../../shared/components/tag/tag.component';
+import { TagComponent } from '../../../../../shared/components/tag/tag.component';
 
 
 @Component({

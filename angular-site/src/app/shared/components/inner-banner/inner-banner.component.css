@@ -27,3 +27,7 @@
     line-height: 8rem;
     margin-bottom: 2.4rem;
 }
+
+.inner-page__heading {
+    text-align: center;
+}

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SkillBarComponent } from '../../../shared/components/skill-bar/skill-bar.component';
+import { SkillBarComponent } from '../../../../shared/components/skill-bar/skill-bar.component';
 
 @Component({
   selector: 'app-cv-summary',
