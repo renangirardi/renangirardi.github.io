@@ -1,0 +1,13 @@
+.container {
+  padding: 4.5rem 0;
+  color: white;
+  align-items: center;
+}
+
+h3 {
+  text-align: right;
+}
+
+app-button {
+  margin-right: auto;
+}

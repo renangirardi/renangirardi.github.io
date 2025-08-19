@@ -32,7 +32,6 @@ export class ImageGalleryComponent {
   loadGalleryImages() {
     if (this.galleryImages === 'about-me-1') {
       this.imageGalleryItems = this.imageGalleryService.getAboutMeImages1();
-      console.log('Loading About Me 1 images', this.imageGalleryItems);
     } else if (this.galleryImages === 'about-me-2') {
       this.imageGalleryItems = this.imageGalleryService.getAboutMeImages2();
     }

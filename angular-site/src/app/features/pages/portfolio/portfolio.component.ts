@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { InnerBannerComponent } from '../../../shared/components/inner-banner/inner-banner.component';
+import { InnerBannerComponent } from '../../components/inner-banner/inner-banner.component';
 import { InnerWipContentComponent } from '../../components/inner-wip-content/inner-wip-content.component';
 
 @Component({
