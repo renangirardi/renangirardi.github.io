@@ -1,5 +1,14 @@
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .about-me-content {
   padding: 9rem 0;
+}
+
+.highlight {
+  font-weight: bold;
 }
 
 .about-me-content__row-1, .about-me-content__row-2 {

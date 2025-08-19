@@ -1,0 +1,67 @@
+h2 {
+  text-align: center;
+}
+
+.container {
+  padding: 9rem 0;
+}
+
+.ai-image-gallery {
+  margin: 3.2rem 0;
+}
+
+.ai-image-gallery:last-child {
+  margin: 3.2rem 0 0;
+}
+
+.chatgpt, .gemini, .claude, .github-copilot, .windsurf, .stable-diffusion, .midjourney, .dall-e, .cthulhu {
+  font-weight: bold;
+}
+
+.chatgpt {
+  color: darkblue;
+}
+
+.gemini {
+  color: darkslateblue;
+}
+
+.claude {
+  color: darkcyan;
+}
+
+.github-copilot {
+  color: darkorange;
+}
+
+.windsurf {
+  color: darkviolet;
+}
+
+.stable-diffusion {
+  color: darkred;
+}
+
+.midjourney {
+  color: darkgoldenrod;
+}
+
+.dall-e {
+  color: darkmagenta;
+}
+
+.cthulhu {
+  animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    color: darkslateblue;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: darkgreen;
+  }
+}

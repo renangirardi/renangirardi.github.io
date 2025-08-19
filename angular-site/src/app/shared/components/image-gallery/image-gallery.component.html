@@ -1,0 +1,10 @@
+<div class="container">
+  <div *ngFor="let item of imageGalleryItems" class="col-2">
+    <img #myImg id="myImg" (click)="openModal(myImg)" [src]="item.src" [alt]="item.alt">
+  </div>
+
+  <div #modal class="modal" (click)="onBackgroundClick($event)">
+    <span #close class="close" (click)="closeModal()">&times;</span>
+    <img #img01 class="modal-content" (click)="$event.stopPropagation()">
+  </div>
+</div>
