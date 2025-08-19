@@ -45,7 +45,7 @@
 
 .portfolio__latest-works--item-1 {
     position: relative;
-    background-image: linear-gradient(rgb(30,30,30,0.7), rgb(30,30,30,0.7)), url('/assets/images/portfolio-sticker-story.png');
+    background-image: linear-gradient(rgb(30,30,30,0.7), rgb(30,30,30,0.7)), url('/assets/images/homepage/portfolio-sticker-story.png');
     background-color: #1e1e1e;
     background-position: center;
     background-size: cover;
@@ -54,7 +54,7 @@
 
 .portfolio__latest-works--item-2 {
     position: relative;
-    background-image: linear-gradient(rgb(30,30,30,0.7), rgb(30,30,30,0.7)), url('/assets/images/porfolio-personal-website.png');
+    background-image: linear-gradient(rgb(30,30,30,0.7), rgb(30,30,30,0.7)), url('/assets/images/homepage/porfolio-personal-website.png');
     background-color: #1e1e1e;
     background-position: center;
     background-size: cover;
@@ -63,7 +63,7 @@
 
 .portfolio__latest-works--item-3 {
     position: relative;
-    background-image: linear-gradient(rgb(30,30,30,0.7), rgb(30,30,30,0.7)), url('/assets/images/coming-soon.png');
+    background-image: linear-gradient(rgb(30,30,30,0.7), rgb(30,30,30,0.7)), url('/assets/images/homepage/coming-soon.png');
     background-color: #1e1e1e;
     background-position: center;
     background-size: 60%;

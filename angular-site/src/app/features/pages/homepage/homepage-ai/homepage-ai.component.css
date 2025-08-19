@@ -24,7 +24,7 @@
     width: 10rem;
     height: 10rem;
     position: relative;
-    background-image: url('/assets/images/openai-svgrepo-com.png');
+    background-image: url('/assets/images/homepage/openai-svgrepo-com.png');
     background-position: center;
     background-size: 80%;
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@
     width: 10rem;
     height: 10rem;
     position: relative;
-    background-image: url('/assets/images/github-copilot-seeklogo.png');
+    background-image: url('/assets/images/homepage/github-copilot-seeklogo.png');
     background-position: center;
     background-size: 80%;
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@
     width: 10rem;
     height: 10rem;
     position: relative;
-    background-image: url('/assets/images/midjourney-seeklogo.png');
+    background-image: url('/assets/images/homepage/midjourney-seeklogo.png');
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;

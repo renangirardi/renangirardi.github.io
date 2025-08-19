@@ -20,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/assets/images/cv_cthulhu.png");
+  background-image: url("/assets/images/cv/cv_cthulhu.png");
   background-size: cover;
   border-radius: 1.6rem;
 }

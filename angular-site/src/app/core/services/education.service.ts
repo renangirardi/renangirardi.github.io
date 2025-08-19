@@ -24,7 +24,7 @@ export class EducationService {
         'MFEs',
         'Software Architecture'
       ],
-      logo: '/assets/images/fiap.png',
+      logo: '/assets/images/cv/fiap.png',
       url: 'https://www.fiap.com.br/'
     },
     {
@@ -44,7 +44,7 @@ export class EducationService {
         'Database Modeling',
         'Version Control (Git)',
       ],
-      logo: '/assets/images/unisinos.png',
+      logo: '/assets/images/cv/unisinos.png',
       url: 'https://www.unisinos.br/'
     },
     {
@@ -64,7 +64,7 @@ export class EducationService {
         'Negotiation',
         'Problem Solving'
       ],
-      logo: '/assets/images/ufrgs.png',
+      logo: '/assets/images/cv/ufrgs.png',
       url: 'https://www.ufrgs.br/'
     }
   ];
