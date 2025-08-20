@@ -1,6 +1,6 @@
 <section class="cv-summary-container">
-  <h2 class="cv-summary-container__title">Summary</h2>
-  <div class="cv-summary-container__content container">
+  <h2 class="cv-summary-container__title fade-in" appFadeIn>Summary</h2>
+  <div class="cv-summary-container__content container fade-in" appFadeIn>
     <div class="cv-summary-container__intro col-7">
       <div>
         <h3>Career Objectives</h3>
@@ -23,47 +23,49 @@
     <div class="cv-summary-container__img col-4">
     </div>
   </div>
-  <div class="cv-summary-container__skills container">
-    <h3 class="col-12">Core Competencies</h3>
-  </div>
-  <div class="cv-summary-container__skills-list container">
-    <div class="cv-summary-container__skills-list__column col-6">
-      <div class="cv-summary-container__skills-list__title">
-        <h4>Technical Skills</h4>
-        <div class="divider"></div>
-      </div>
-      <app-skill-bar [progressWidth]="'80%'" [label]="'TypeScript'" [color]="2"></app-skill-bar>
-      <app-skill-bar [progressWidth]="'90%'" [label]="'HTML/CSS'" [color]="2"></app-skill-bar>
-      <app-skill-bar [progressWidth]="'90%'" [label]="'JavaScript'" [color]="2"></app-skill-bar>
-      <app-skill-bar [progressWidth]="'80%'" [label]="'Angular'" [color]="2"></app-skill-bar>
-      <app-skill-bar [progressWidth]="'70%'" [label]="'Node.js'" [color]="2"></app-skill-bar>
-      <app-skill-bar [progressWidth]="'40%'" [label]="'React'" [color]="2"></app-skill-bar>
-      <app-skill-bar [progressWidth]="'20%'" [label]="'React Native'" [color]="2"></app-skill-bar>
-      <app-skill-bar [progressWidth]="'70%'" [label]="'Figma'" [color]="2"></app-skill-bar>
-      <app-skill-bar [progressWidth]="'20%'" [label]="'Next.js'" [color]="2"></app-skill-bar>
-      <app-skill-bar [progressWidth]="'50%'" [label]="'MongoDB'" [color]="2"></app-skill-bar>
+  <div class="fade-in" appFadeIn>
+    <div class="cv-summary-container__skills container">
+      <h3 class="col-12">Core Competencies</h3>
     </div>
-    <div class="cv-summary-container__skills-list__column col-6">
-      <div>
+    <div class="cv-summary-container__skills-list container">
+      <div class="cv-summary-container__skills-list__column col-6">
         <div class="cv-summary-container__skills-list__title">
-          <h4>Soft Skills</h4>
+          <h4>Technical Skills</h4>
           <div class="divider"></div>
         </div>
-        <app-skill-bar [progressWidth]="'100%'" [label]="'Communication'" [color]="1"></app-skill-bar>
-        <app-skill-bar [progressWidth]="'90%'" [label]="'Teamwork'" [color]="1"></app-skill-bar>
-        <app-skill-bar [progressWidth]="'80%'" [label]="'Problem-solving'" [color]="1"></app-skill-bar>
-        <app-skill-bar [progressWidth]="'90%'" [label]="'Adaptability'" [color]="1"></app-skill-bar>
-        <app-skill-bar [progressWidth]="'90%'" [label]="'Leadership'" [color]="1"></app-skill-bar>
-        <app-skill-bar [progressWidth]="'100%'" [label]="'Empathy'" [color]="1"></app-skill-bar>
+        <app-skill-bar [progressWidth]="'80%'" [label]="'TypeScript'" [color]="2"></app-skill-bar>
+        <app-skill-bar [progressWidth]="'90%'" [label]="'HTML/CSS'" [color]="2"></app-skill-bar>
+        <app-skill-bar [progressWidth]="'90%'" [label]="'JavaScript'" [color]="2"></app-skill-bar>
+        <app-skill-bar [progressWidth]="'80%'" [label]="'Angular'" [color]="2"></app-skill-bar>
+        <app-skill-bar [progressWidth]="'70%'" [label]="'Node.js'" [color]="2"></app-skill-bar>
+        <app-skill-bar [progressWidth]="'40%'" [label]="'React'" [color]="2"></app-skill-bar>
+        <app-skill-bar [progressWidth]="'20%'" [label]="'React Native'" [color]="2"></app-skill-bar>
+        <app-skill-bar [progressWidth]="'70%'" [label]="'Figma'" [color]="2"></app-skill-bar>
+        <app-skill-bar [progressWidth]="'20%'" [label]="'Next.js'" [color]="2"></app-skill-bar>
+        <app-skill-bar [progressWidth]="'50%'" [label]="'MongoDB'" [color]="2"></app-skill-bar>
       </div>
-      <div>
-        <div class="cv-summary-container__skills-list__title">
-          <h4>Languages</h4>
-          <div class="divider"></div>
+      <div class="cv-summary-container__skills-list__column col-6">
+        <div>
+          <div class="cv-summary-container__skills-list__title">
+            <h4>Soft Skills</h4>
+            <div class="divider"></div>
+          </div>
+          <app-skill-bar [progressWidth]="'100%'" [label]="'Communication'" [color]="1"></app-skill-bar>
+          <app-skill-bar [progressWidth]="'90%'" [label]="'Teamwork'" [color]="1"></app-skill-bar>
+          <app-skill-bar [progressWidth]="'80%'" [label]="'Problem-solving'" [color]="1"></app-skill-bar>
+          <app-skill-bar [progressWidth]="'90%'" [label]="'Adaptability'" [color]="1"></app-skill-bar>
+          <app-skill-bar [progressWidth]="'90%'" [label]="'Leadership'" [color]="1"></app-skill-bar>
+          <app-skill-bar [progressWidth]="'100%'" [label]="'Empathy'" [color]="1"></app-skill-bar>
         </div>
-        <app-skill-bar [progressWidth]="'100%'" [label]="'Portuguese'" [color]="0"></app-skill-bar>
-        <app-skill-bar [progressWidth]="'80%'" [label]="'English'" [color]="0"></app-skill-bar>
-        <app-skill-bar [progressWidth]="'50%'" [label]="'Spanish'" [color]="0"></app-skill-bar>
+        <div>
+          <div class="cv-summary-container__skills-list__title">
+            <h4>Languages</h4>
+            <div class="divider"></div>
+          </div>
+          <app-skill-bar [progressWidth]="'100%'" [label]="'Portuguese'" [color]="0"></app-skill-bar>
+          <app-skill-bar [progressWidth]="'80%'" [label]="'English'" [color]="0"></app-skill-bar>
+          <app-skill-bar [progressWidth]="'50%'" [label]="'Spanish'" [color]="0"></app-skill-bar>
+        </div>
       </div>
     </div>
   </div>

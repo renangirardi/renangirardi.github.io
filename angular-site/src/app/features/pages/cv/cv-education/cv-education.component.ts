@@ -3,15 +3,20 @@ import { CommonModule } from '@angular/common';
 
 import { Education } from '../../../../core/models/education';
 import { Certificate } from '../../../../core/models/certificate';
-
 import { EducationService } from '../../../../core/services/education.service';
+import { FadeInDirective } from '../../../../core/directives/fade-in.directive';
 
 import { CvEducationItemComponent } from './cv-education-item/cv-education-item.component';
 import { CvEducationCertificateComponent } from './cv-education-certificate/cv-education-certificate.component';
 
 @Component({
   selector: 'app-cv-education',
-  imports: [CommonModule, CvEducationItemComponent, CvEducationCertificateComponent],
+  imports: [
+    CommonModule,
+    CvEducationItemComponent,
+    CvEducationCertificateComponent,
+    FadeInDirective
+  ],
   templateUrl: './cv-education.component.html',
   styleUrl: './cv-education.component.css'
 })

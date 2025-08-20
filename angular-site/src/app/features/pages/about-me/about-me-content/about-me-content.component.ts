@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+
+import { FadeInDirective } from '../../../../core/directives/fade-in.directive';
+
 import { calculateAge } from '../../../../core/utils/calculate-age/calculate-age';
 
 @Component({
   selector: 'app-about-me-content',
-  imports: [],
+  imports: [FadeInDirective],
   templateUrl: './about-me-content.component.html',
   styleUrl: './about-me-content.component.css'
 })

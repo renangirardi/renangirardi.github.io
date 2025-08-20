@@ -8,11 +8,13 @@ import { Experience } from '../../../../core/models/experience';
 import { EducationService } from '../../../../core/services/education.service';
 import { ExperienceService } from '../../../../core/services/experience.service';
 
+import { FadeInDirective } from '../../../../core/directives/fade-in.directive';
+
 import { HomepageCvItemComponent } from './homepage-cv-item/homepage-cv-item.component';
 
 @Component({
   selector: 'app-homepage-cv',
-  imports: [RouterModule, HomepageCvItemComponent, CommonModule],
+  imports: [RouterModule, HomepageCvItemComponent, CommonModule, FadeInDirective],
   templateUrl: './homepage-cv.component.html',
   styleUrl: './homepage-cv.component.css'
 })

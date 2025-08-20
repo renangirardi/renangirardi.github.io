@@ -1,12 +1,15 @@
 import { Component, Input } from '@angular/core';
-import { Education } from '../../../../../core/models/education';
 import { CommonModule } from '@angular/common';
+
+import { Education } from '../../../../../core/models/education';
+import { FadeInDirective } from '../../../../../core/directives/fade-in.directive';
+
 import { TagComponent } from '../../../../../shared/components/tag/tag.component';
 
 
 @Component({
   selector: 'app-cv-education-item',
-  imports: [CommonModule, TagComponent],
+  imports: [CommonModule, TagComponent, FadeInDirective],
   templateUrl: './cv-education-item.component.html',
   styleUrl: './cv-education-item.component.css'
 })
