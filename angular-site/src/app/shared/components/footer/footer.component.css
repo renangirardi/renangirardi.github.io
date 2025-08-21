@@ -1,7 +1,8 @@
 .footer {
     color: #fff;
     width: 100%;
-    padding: 9rem 0 5.2rem;
+    padding-top: 9rem;
+    padding-bottom: 5.2rem;
 
     display: flex;
     flex-direction: column;
@@ -50,4 +51,11 @@
 
 .nav-mobile {
     display: none;
+}
+
+@media (min-width: 951px) {
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

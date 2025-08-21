@@ -3,7 +3,8 @@
 .portfolio {
     color: #fff;
     width: 100%;
-    padding: 9rem 0;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
 
     display: flex;
     flex-direction: column;
@@ -83,4 +84,41 @@
 .portfolio__item {
     font-size: 4rem;
     font-weight: 800;
+}
+
+@media (min-width: 951px) {
+  .portfolio {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 950px) {
+  .header {
+    padding-top: 3.2rem;
+    padding-bottom: 5.2rem;
+  }
+
+  .portfolio__header {
+    display: flex;
+    flex-direction: rox;
+  }
+
+  .portfolio__latest-works--item {
+    grid-column: span 6;
+  }
+
+  .portfolio__latest-works--item-3 {
+    display: none;
+  }
+}
+
+@media (max-width: 758px) {
+  .portfolio__latest-works--item {
+    grid-column: span 12;
+  }
+
+  .portfolio__latest-works--item-3 {
+    display: none;
+  }
 }

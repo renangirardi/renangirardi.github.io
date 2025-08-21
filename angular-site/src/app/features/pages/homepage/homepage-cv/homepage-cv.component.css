@@ -2,7 +2,8 @@
 
 .cv {
     width: 100%;
-    padding: 9rem 0;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
     align-items: flex-start;
 }
 
@@ -41,4 +42,17 @@
 
 app-homepage-cv-item {
   width: 100%;
+}
+
+@media (min-width: 951px) {
+  .cv {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .cv {
+    display: block;
+  }
 }

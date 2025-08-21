@@ -46,7 +46,7 @@
       </div>
     </a>
   </div>
-  <nav class="col-6">
+  <nav class="nav col-6">
     <ul class="nav__list">
       <li class="nav__item">
         <a routerLink="about-me">About me</a>
@@ -59,13 +59,13 @@
       </li>
     </ul>
   </nav>
-  <div class="col-3">
+  <div class="header__contact-link col-3 ">
     <app-button [style]="'secondary'" [size]="'medium'" [text]="'Contact'" [routerLink]="['contact']"></app-button>
   </div>
-  <div class="nav-mobile" *ngIf="isMobileViewport">
-    <span class="material-symbols-outlined" id="menu-toggle">menu</span>
-    <div class="mobile-menu">
-      <span class="material-symbols-outlined" id="close-menu">close</span>
+  <div class="nav-mobile">
+    <span class="material-symbols-outlined" id="menu-toggle" (click)="toggleMobileMenu()">menu</span>
+    <div #mobileMenu class="mobile-menu">
+      <span class="material-symbols-outlined" id="close-menu" (click)="closeMobileMenu()">close</span>
       <ul>
         <li><a href="/about-me">About me</a></li>
         <li><a href="/cv">Curriculum vitæ</a></li>
@@ -73,6 +73,6 @@
         <li><a href="/contact">Contact</a></li>
       </ul>
     </div>
-    <div class="overlay"></div>
+    <div #overlay class="overlay" (click)="closeMobileMenu()"></div>
   </div>
 </header>

@@ -2,7 +2,8 @@
 
 .ai {
     color: #fff;
-    padding: 4.5rem 0;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
     align-items: center;
 }
 
@@ -47,4 +48,30 @@
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+@media (min-width: 951px) {
+  .ai {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 950px) {
+  .ai__icons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .ai{
+    display: block;
+  }
+
+  .ai__icons {
+    margin-top: 3.2rem;
+    display: flex;
+    flex-direction: row;
+  }
 }
