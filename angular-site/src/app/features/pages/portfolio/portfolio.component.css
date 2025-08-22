@@ -1,0 +1,12 @@
+@media (min-width: 951px) {
+  .container {
+    padding: 9.4rem 12rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .container {
+    padding-top: 9.4rem;
+    padding-bottom: 9.4rem;
+  }
+}

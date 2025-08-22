@@ -24,5 +24,6 @@ export default defineConfig([
     ".vscode/*",
     ".angular/*",
     "karma.conf.js",
+    "coverage/*",
   ]),
 ]);
