@@ -71,6 +71,12 @@ export class EducationService {
 
   private certificates: Certificate[] = [
     {
+      name: 'Docker: criando e gerenciando containers',
+      year: 2025,
+      institution: 'alura',
+      url: 'https://cursos.alura.com.br/formalCertificate/b85576a5-7f1d-4e9d-beaf-11a2f9a4cc5d'
+    },
+    {
       name: 'Angular: gerenciando estado com Signals',
       year: 2025,
       institution: 'alura',
