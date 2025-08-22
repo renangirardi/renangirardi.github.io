@@ -1,5 +1,5 @@
 <div class="container">
-  <div *ngFor="let item of imageGalleryItems" class="col-2">
+  <div *ngFor="let item of imageGalleryItems" class="col-2 imageItem">
     <img #myImg id="myImg" (click)="openModal(myImg)" [src]="item.src" [alt]="item.alt">
   </div>
 

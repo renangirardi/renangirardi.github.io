@@ -1,10 +1,6 @@
-.container {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .about-me-content {
-  padding: 9rem 0;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 
 .highlight {
@@ -26,4 +22,26 @@
 
 .about-me-content__text p:last-child {
   margin-bottom: 0;
+}
+
+@media (min-width: 951px) {
+  .about-me-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 950px) {
+
+}
+
+@media (max-width: 758px) {
+  .about-me-content__row-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-me-content__row-2 .about-me-content__image {
+    order: 2;
+  }
 }

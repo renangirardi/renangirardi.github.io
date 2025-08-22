@@ -71,6 +71,12 @@ export class EducationService {
 
   private certificates: Certificate[] = [
     {
+      name: 'Angular: gerenciando estado com Signals',
+      year: 2025,
+      institution: 'alura',
+      url: 'https://cursos.alura.com.br/formalCertificate/aba53a68-23ed-4138-809e-5e63b7df5ffd'
+    },
+    {
       name: 'Angular: explorando testes de unidade e integração',
       year: 2025,
       institution: 'alura',
