@@ -1,10 +1,16 @@
-import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  Input,
+  ViewChild,
+} from '@angular/core';
 
 @Component({
   selector: 'app-skill-bar',
   imports: [],
   templateUrl: './skill-bar.component.html',
-  styleUrl: './skill-bar.component.css'
+  styleUrl: './skill-bar.component.css',
 })
 export class SkillBarComponent implements AfterViewInit {
   @ViewChild('progressValue') progressValue!: ElementRef;
@@ -20,7 +26,9 @@ export class SkillBarComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.progressValue.nativeElement.style.background = this.colors[this.color];
-    this.progressValue.nativeElement.style.setProperty('--final-width', this.progressWidth);
+    this.progressValue.nativeElement.style.setProperty(
+      '--final-width',
+      this.progressWidth,
+    );
   }
-
 }

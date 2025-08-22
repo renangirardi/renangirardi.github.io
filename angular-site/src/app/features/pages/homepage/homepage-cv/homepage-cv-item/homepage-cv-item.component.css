@@ -1,33 +1,33 @@
 .cv__column--item {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 
-    margin-top: 1.6rem;;
+  margin-top: 1.6rem;
 }
 
 .cv__column--info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .cv__column--icon {
-    font-size: 3.2rem !important;
-    margin-right: 1.6rem;
+  font-size: 3.2rem !important;
+  margin-right: 1.6rem;
 
-    color: #4A90E2;
+  color: #4a90e2;
 }
 
 .cv__course {
-    font-weight: 600;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
 }
 
 .cv__university {
-    font-weight: 400;
-    font-size: 1.6rem;
+  font-weight: 400;
+  font-size: 1.6rem;
 }

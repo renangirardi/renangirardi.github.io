@@ -1,5 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, HostListener, Input, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  HostListener,
+  Input,
+  ViewChild,
+} from '@angular/core';
 import { ImageGalleryService } from '../../../core/services/image-gallery.service';
 import { ImageGalleryItem } from '../../../core/models/image-gallery-item';
 
@@ -7,7 +13,7 @@ import { ImageGalleryItem } from '../../../core/models/image-gallery-item';
   selector: 'app-image-gallery',
   imports: [CommonModule],
   templateUrl: './image-gallery.component.html',
-  styleUrl: './image-gallery.component.css'
+  styleUrl: './image-gallery.component.css',
 })
 export class ImageGalleryComponent {
   @ViewChild('myImg') myImg!: ElementRef;
@@ -19,11 +25,11 @@ export class ImageGalleryComponent {
   imageGalleryItems: ImageGalleryItem[] = [];
 
   @HostListener('document:keydown.escape', ['$event'])
-  onEscKey(event: KeyboardEvent) {
+  onEscKey() {
     this.closeModal();
   }
 
-  constructor(private imageGalleryService: ImageGalleryService) { }
+  constructor(private imageGalleryService: ImageGalleryService) {}
 
   ngOnInit() {
     this.loadGalleryImages();
@@ -38,12 +44,12 @@ export class ImageGalleryComponent {
   }
 
   openModal(myImg: HTMLImageElement) {
-    this.modal.nativeElement.style.display = "block";
+    this.modal.nativeElement.style.display = 'block';
     this.img01.nativeElement.src = myImg.src;
   }
 
   closeModal() {
-    this.modal.nativeElement.style.display = "none";
+    this.modal.nativeElement.style.display = 'none';
   }
 
   onBackgroundClick(event: MouseEvent) {
@@ -51,5 +57,4 @@ export class ImageGalleryComponent {
       this.closeModal();
     }
   }
-
 }

@@ -16,7 +16,7 @@
 }
 
 .progress {
-  background: rgba(255,255,255,0.5);
+  background: rgba(255, 255, 255, 0.5);
   justify-content: flex-start;
   border-radius: 100px;
   align-items: center;
@@ -37,6 +37,10 @@
 }
 
 @keyframes load {
-  0% { width: 0; }
-  100% { width: var(--final-width); }
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--final-width);
+  }
 }

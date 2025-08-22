@@ -1,44 +1,49 @@
 /* Styles */
 
 .primary {
-  background-color: #4A90E2;
+  background-color: #4a90e2;
   text-transform: uppercase;
   box-shadow: 2px 1px 5px #1e1e1e;
   border: 0;
-  color: #fff
+  color: #fff;
 }
 
-.primary:hover, .primary:active, .primary:focus {
-  background-color: #0C4160;
+.primary:hover,
+.primary:active,
+.primary:focus {
+  background-color: #0c4160;
   cursor: pointer;
 }
 
 .secondary {
   text-transform: uppercase;
-  border: solid 1px #738FA7;
-  text-wrap: nowrap;
+  border: solid 1px #738fa7;
+  white-space: nowrap;
   background-color: transparent;
   color: #fff;
 }
 
-.secondary:hover, .secondary:active, .secondary:focus {
-  background-color: #738FA7;
+.secondary:hover,
+.secondary:active,
+.secondary:focus {
+  background-color: #738fa7;
   cursor: pointer;
 }
 
 .tertiary {
-    background-color: #fff;
-    text-transform: uppercase;
-    box-shadow: 2px 1px 5px #888888;
-    border: 0;
+  background-color: #fff;
+  text-transform: uppercase;
+  box-shadow: 2px 1px 5px #888888;
+  border: 0;
 }
 
-.tertiary:hover, .tertiary:active, .tertiary:focus {
-    color: #fff;
-    background-color: #0C4160;
-    cursor: pointer;
+.tertiary:hover,
+.tertiary:active,
+.tertiary:focus {
+  color: #fff;
+  background-color: #0c4160;
+  cursor: pointer;
 }
-
 
 /* Sizes */
 

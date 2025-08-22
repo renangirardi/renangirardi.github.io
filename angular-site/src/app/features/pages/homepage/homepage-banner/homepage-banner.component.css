@@ -23,7 +23,7 @@
   margin-bottom: 2.4rem;
 }
 
-.banner__description{
+.banner__description {
   line-height: 3.2rem;
   font-size: 1.6rem;
   margin-bottom: 5.1rem;
@@ -47,7 +47,7 @@
 
 .crooked-box {
   position: absolute;
-  background-color: #5B8EE1;
+  background-color: #5b8ee1;
   width: 12.8rem;
   height: 12.8rem;
   animation-name: rotate-croocked-box;
@@ -57,7 +57,6 @@
   animation-timing-function: linear;
   z-index: 99;
 }
-
 
 .card-skills {
   position: absolute;
@@ -84,7 +83,7 @@
 }
 
 .card-skills--top {
-  background-color: #C3CEDA;
+  background-color: #c3ceda;
   width: 8rem;
   height: 1.8rem;
   border-radius: 4px;
@@ -100,12 +99,11 @@
 }
 
 .bar {
-  background-color: #C3CEDA;
+  background-color: #c3ceda;
   width: 0.8rem;
   height: 5rem;
   margin: 0 0.8rem;
   border-radius: 4px;
-
 
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -113,11 +111,14 @@
   animation-timing-function: linear;
 }
 
-.bar-1, .bar-4, .bar-6 {
+.bar-1,
+.bar-4,
+.bar-6 {
   height: 3.8rem;
 }
 
-.bar-5, .bar-7 {
+.bar-5,
+.bar-7 {
   height: 2.7rem;
 }
 
@@ -125,15 +126,18 @@
   height: 4.4rem;
 }
 
-.bar-1, .bar-3 {
+.bar-1,
+.bar-3 {
   animation-name: transform-skill-bars-1-3;
 }
 
-.bar-2, .bar-7 {
+.bar-2,
+.bar-7 {
   animation-name: transform-skill-bars-2-7;
 }
 
-.bar-5, .bar-4 {
+.bar-5,
+.bar-4 {
   animation-name: transform-skill-bars-4-5;
 }
 
@@ -142,23 +146,33 @@
 }
 
 @keyframes transform-skill-bars-1-3 {
-  100% {height: 2.7rem;}
+  100% {
+    height: 2.7rem;
+  }
 }
 
 @keyframes transform-skill-bars-2-7 {
-  100% {height: 3.8rem;}
+  100% {
+    height: 3.8rem;
+  }
 }
 
 @keyframes transform-skill-bars-6 {
-  100% {height: 4.4rem;}
+  100% {
+    height: 4.4rem;
+  }
 }
 
 @keyframes transform-skill-bars-4-5 {
-  100% {height: 5rem;}
+  100% {
+    height: 5rem;
+  }
 }
 
 @keyframes rotate-croocked-box {
-  100% {transform: rotate(15deg);}
+  100% {
+    transform: rotate(15deg);
+  }
 }
 
 .image-slider {
@@ -198,15 +212,23 @@
 }
 
 @keyframes change-image {
-  25% {background-image: url("/assets/images/banner-peanuts-large.jpeg");}
-  50% {background-image: url("/assets/images/banner-cthulhu-large.jpg");}
-  75% {background-image: url("/assets/images/banner-buba-large.jpeg");}
-  100% {background-image: url("/assets/images/banner-tuquinho-large.jpeg");}
+  25% {
+    background-image: url("/assets/images/banner-peanuts-large.jpeg");
+  }
+  50% {
+    background-image: url("/assets/images/banner-cthulhu-large.jpg");
+  }
+  75% {
+    background-image: url("/assets/images/banner-buba-large.jpeg");
+  }
+  100% {
+    background-image: url("/assets/images/banner-tuquinho-large.jpeg");
+  }
 }
 
 .circle-background {
   position: absolute;
-  background-color: #C3CEDA;
+  background-color: #c3ceda;
   border-radius: 50%;
   height: 41rem;
   width: 41rem;
@@ -218,28 +240,27 @@
 /******** FADE-IN ANIMATION ********/
 
 @keyframes fadeInSlideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .fade-in {
+  from {
     opacity: 0;
+    transform: translateY(-20px);
   }
-
-  .element {
-    opacity: 0;
-    animation-name: fadeInSlideDown;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
 
+.fade-in {
+  opacity: 0;
+}
+
+.element {
+  opacity: 0;
+  animation-name: fadeInSlideDown;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
 
 @media (min-width: 951px) {
   .banner {
@@ -253,7 +274,7 @@
   }
 
   .banner__image {
-      display: none;
+    display: none;
   }
 
   .banner__content {
@@ -267,8 +288,4 @@
     line-height: 6rem;
     margin-bottom: 2.4rem;
   }
-}
-
-@media (max-width: 758px) {
-
 }
