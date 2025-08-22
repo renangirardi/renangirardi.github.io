@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { ImageGalleryItem } from '../models/image-gallery-item';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ImageGalleryService {
   private aboutMeImages1: ImageGalleryItem[] = [
@@ -30,11 +30,10 @@ export class ImageGalleryService {
     {
       src: 'assets/images/about-me/ai.cthulhu__06.jpg',
       alt: 'AI Cthulhu',
-    }
+    },
   ];
 
   private aboutMeImages2: ImageGalleryItem[] = [
-
     {
       src: 'assets/images/about-me/ai.cthulhu__07.jpg',
       alt: 'AI Cthulhu',
@@ -58,14 +57,14 @@ export class ImageGalleryService {
     {
       src: 'assets/images/about-me/ai.cthulhu__12.jpg',
       alt: 'AI Cthulhu',
-    }
+    },
   ];
 
   getAboutMeImages1(): ImageGalleryItem[] {
-    return this.aboutMeImages1;
+    return [...this.aboutMeImages1];
   }
 
   getAboutMeImages2(): ImageGalleryItem[] {
-    return this.aboutMeImages2;
+    return [...this.aboutMeImages2];
   }
 }
