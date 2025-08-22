@@ -41,6 +41,8 @@
     width: 0;
   }
   100% {
-    width: var(--final-width);
+    width: var(
+      /* eslint-disable-line css/no-invalid-properties */ --final-width
+    );
   }
 }
