@@ -6,13 +6,21 @@ import { FadeInDirective } from '../../../../../core/directives/fade-in.directiv
 
 import { TagComponent } from '../../../../../shared/components/tag/tag.component';
 
-
 @Component({
   selector: 'app-cv-education-item',
   imports: [CommonModule, TagComponent, FadeInDirective],
   templateUrl: './cv-education-item.component.html',
-  styleUrl: './cv-education-item.component.css'
+  styleUrl: './cv-education-item.component.css',
 })
 export class CvEducationItemComponent {
-  @Input() educationItem!: Education;
+  @Input() educationItem: Education = {
+    icon: '',
+    course: '',
+    university: '',
+    year: '',
+    description: '',
+    skills: [],
+    logo: '',
+    url: '',
+  };
 }

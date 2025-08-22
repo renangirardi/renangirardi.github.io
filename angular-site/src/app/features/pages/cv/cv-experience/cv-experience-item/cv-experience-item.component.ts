@@ -10,9 +10,17 @@ import { TagComponent } from '../../../../../shared/components/tag/tag.component
   selector: 'app-cv-experience-item',
   imports: [CommonModule, TagComponent, FadeInDirective],
   templateUrl: './cv-experience-item.component.html',
-  styleUrl: './cv-experience-item.component.css'
+  styleUrl: './cv-experience-item.component.css',
 })
 export class CvExperienceItemComponent {
-  @Input() experienceItem!: Experience;
-
+  @Input() experienceItem: Experience = {
+    icon: '',
+    job: '',
+    company: '',
+    year: '',
+    city: '',
+    description: [],
+    skills: [],
+    logo: '',
+  };
 }

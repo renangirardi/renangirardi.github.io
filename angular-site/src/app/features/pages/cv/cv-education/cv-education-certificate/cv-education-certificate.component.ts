@@ -5,8 +5,13 @@ import { Certificate } from '../../../../../core/models/certificate';
   selector: 'app-cv-education-certificate',
   imports: [],
   templateUrl: './cv-education-certificate.component.html',
-  styleUrl: './cv-education-certificate.component.css'
+  styleUrl: './cv-education-certificate.component.css',
 })
 export class CvEducationCertificateComponent {
-  @Input() certificate!: Certificate;
+  @Input() certificate: Certificate = {
+    name: '',
+    year: 0,
+    institution: '',
+    url: '',
+  };
 }

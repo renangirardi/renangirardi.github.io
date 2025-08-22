@@ -18,5 +18,11 @@ export default defineConfig([
     language: "css/css",
     extends: ["css/recommended"],
   },
-  globalIgnores(["dist/*", "node_modules/*", ".vscode/*", ".angular/*"]),
+  globalIgnores([
+    "dist/*",
+    "node_modules/*",
+    ".vscode/*",
+    ".angular/*",
+    "karma.conf.js",
+  ]),
 ]);

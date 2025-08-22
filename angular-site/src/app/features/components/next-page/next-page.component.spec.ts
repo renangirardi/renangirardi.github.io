@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterModule } from '@angular/router';
 
 import { NextPageComponent } from './next-page.component';
 
@@ -8,9 +9,8 @@ describe('NextPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NextPageComponent]
-    })
-    .compileComponents();
+      imports: [NextPageComponent, RouterModule.forRoot([])],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(NextPageComponent);
     component = fixture.componentInstance;
