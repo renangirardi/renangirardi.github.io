@@ -31,3 +31,9 @@
 .inner-page__heading {
     text-align: center;
 }
+
+@media (max-width: 758px) {
+  .banner {
+      padding: 0 0 9.4rem;
+  }
+}

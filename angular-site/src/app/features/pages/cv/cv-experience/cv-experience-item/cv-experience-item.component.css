@@ -33,7 +33,6 @@
 }
 
 .cv-experience-item__header {
-
   margin-bottom: 1.6rem;
 }
 
@@ -69,4 +68,23 @@
   width: 1px;
   background-color: lightgray;
   align-self: stretch;
+}
+
+@media (min-width: 951px) {
+
+}
+
+@media (max-width: 950px) {
+  .vertical-divider  {
+    display: none;
+  }
+
+  .cv-experience-item__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 758px) {
+
 }

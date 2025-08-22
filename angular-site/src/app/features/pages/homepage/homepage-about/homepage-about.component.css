@@ -48,10 +48,6 @@
     align-items: center;
     justify-content: center;
   }
-
-  .ghost-column {
-    display: none;
-  }
 }
 
 @media (max-width: 768px) {

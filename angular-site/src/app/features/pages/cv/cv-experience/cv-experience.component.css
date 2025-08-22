@@ -1,8 +1,20 @@
-.cv-experience-container {
-  padding: 0 12rem;
-}
-
 .cv-experience-container__title {
     margin-bottom: 6.4rem;
     text-align: center;
+}
+
+@media (min-width: 951px) {
+  .cv-experience-container {
+    padding: 0 12rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .cv-experience-container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 758px) {
+
 }

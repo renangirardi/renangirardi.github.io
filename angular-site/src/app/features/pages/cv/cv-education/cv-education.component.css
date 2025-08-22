@@ -49,3 +49,23 @@ select option {
   align-items: center;
   padding: 0;
 }
+
+@media (min-width: 951px) {
+
+}
+
+@media (max-width: 950px) {
+
+}
+
+@media (max-width: 758px) {
+ .cv-education-certificates__header {
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .cv-education-certificates__sort {
+  position: relative;
+  margin-top: 1.6rem;
+ }
+}

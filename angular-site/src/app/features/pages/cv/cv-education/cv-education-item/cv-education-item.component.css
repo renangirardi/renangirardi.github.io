@@ -29,7 +29,6 @@
 .cv-education-container__text {
     font-size: 1.6rem;
     line-height: 3.2rem;
-    width: 20%;
 }
 
 .cv-education-container__text .material-symbols-outlined {
@@ -68,4 +67,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 0.8rem;
+}
+
+@media (max-width: 950px) {
+  .cv-education-container__content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

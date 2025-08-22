@@ -61,3 +61,26 @@ h4 {
     margin: 2.4rem 0 1.6rem;
     flex: 1.5;
 }
+
+@media (min-width: 951px) {
+
+}
+
+@media (max-width: 950px) {
+  .cv-summary-container__img {
+    display: none;
+  }
+
+  .cv-summary-container__intro {
+    grid-column: span 12;
+  }
+
+  .cv-summary-container__skills-list.container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 758px) {
+
+}

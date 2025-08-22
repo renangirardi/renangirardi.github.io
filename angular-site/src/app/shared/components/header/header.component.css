@@ -1,8 +1,6 @@
 .header {
-
   color: #fff;
   width: 100%;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -42,6 +40,10 @@
 
 .nav__item:hover {
   border-bottom: #738FA7 2px solid;
+}
+
+.nav-mobile {
+  display: none;
 }
 
 @media (min-width: 951px) {

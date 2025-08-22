@@ -1,14 +1,24 @@
 .cv-education-container {
     background-color: #0C4160;
     width: 100%;
-    padding: 9.4rem;
     color: #fff;
 }
 
 .cv-experience-container {
     background-color: #ffffff;
     width: 100%;
-    padding: 9.4rem;
     color: #1e1e1e;
 }
 
+@media (min-width: 951px) {
+  .cv-experience-container, .cv-education-container {
+    padding: 9.4rem 12rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .cv-experience-container, .cv-education-container {
+    padding-top: 9.4rem;
+    padding-bottom: 9.4rem;
+  }
+}

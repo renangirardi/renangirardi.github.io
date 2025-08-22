@@ -30,3 +30,13 @@
 .contact-page__text .material-symbols-outlined {
   font-size: 4rem;
 }
+
+@media (max-width: 950px) {
+  .contact-page__content {
+    flex-direction: column;
+  }
+
+  .contact-page__text {
+    width: 100%;
+  }
+}
