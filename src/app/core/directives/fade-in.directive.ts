@@ -2,7 +2,7 @@ import { Directive, ElementRef, OnDestroy, OnInit } from '@angular/core';
 
 @Directive({
   selector: '[appFadeIn]',
-  standalone: true
+  standalone: true,
 })
 export class FadeInDirective implements OnInit, OnDestroy {
   private observer!: IntersectionObserver;
@@ -19,7 +19,7 @@ export class FadeInDirective implements OnInit, OnDestroy {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     this.observer.observe(this.el.nativeElement);
