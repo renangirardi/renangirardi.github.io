@@ -29,6 +29,14 @@
   margin-top: 3.2rem;
 }
 
+.cv-summary-container__intro__text p {
+  margin-bottom: 1.6rem;
+}
+
+.cv-summary-container__intro__text p:last-child {
+  margin-bottom: 0;
+}
+
 .cv-summary-container__skills-list {
   display: flex;
   gap: 2rem;

@@ -97,6 +97,10 @@ img {
   height: auto;
 }
 
+.highlight {
+  font-weight: bold;
+}
+
 /* SECTION BACKGROUNDS */
 
 .primary-background {

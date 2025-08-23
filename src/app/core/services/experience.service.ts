@@ -13,10 +13,10 @@ export class ExperienceService {
       year: '2021 - Present',
       city: 'Eldorado do Sul, Brazil',
       description: [
-        'Developed and deployed A/B tests across Dell’s global e-commerce platforms using vanilla JavaScript and Adobe Target.',
-        'Served as Focal Point for A/B Testing projects, coordinating development, QA, and performance analysis.',
-        'Designed and developed internal tools for test tracking and management using the MEAN stack (MongoDB, Express.js, Angular, Node.js), improving team productivity and operational visibility.',
-        'Applied UX research, interface design, and usability testing to enhance internal platform usability.',
+        'Designed and developed internal tools for test monitoring and management using Angular, Node.js, Express.js, and MongoDB (MEAN Stack), integrating REST APIs, version control with Git, Agile/Scrum methodologies, and CI/CD practices. This project increased team productivity and operational visibility.',
+        'Developed and implemented A/B tests on Dell’s global e-commerce platforms using Vanilla JavaScript and Adobe Target.',
+        'Acted as Focal Point for A/B testing projects, coordinating development, QA, and performance analysis.',
+        'Conducted UX research, interface design, and usability testing to enhance the user experience of internal platforms.',
       ],
       skills: [
         'JavaScript',
