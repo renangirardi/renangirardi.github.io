@@ -23,6 +23,32 @@ export class PortfolioService {
       isFeatured: true,
       route: 'personal-website',
     },
+    {
+      title: 'StickerStory',
+      year: '2023',
+      summary:
+        'Gamified application for managing children’s routines. Features include secure login with JWT, RESTful APIs, responsive Angular frontend, and modular architecture.',
+      technologies: [
+        'Angular',
+        'TypeScript',
+        'Node.js',
+        'MongoDB',
+        'Mongoose',
+        'Express.js',
+        'JWT',
+        'RxJS',
+      ],
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et odio sed sapien malesuada tincidunt sed hendrerit urna. Mauris consequat ex et metus sodales pulvinar. Nulla et lobortis diam. Nunc pellentesque massa felis, at rhoncus erat viverra a. Morbi laoreet, elit ac lacinia sollicitudin, sapien libero vestibulum felis, in bibendum nisi nisi vel lacus. Donec vestibulum purus tortor, a pellentesque arcu tristique nec. Maecenas id dui vitae metus molestie tincidunt. Donec cursus neque vel neque euismod ultrices. In blandit ultrices imperdiet. Vivamus tincidunt nisl vel augue ultrices convallis. Nam at odio leo. Nulla ut ultricies lacus, non convallis mi. Quisque sollicitudin augue sapien, eget interdum ante tincidunt ac. Pellentesque pharetra vulputate viverra. Fusce vehicula finibus ipsum et malesuada.',
+      features: ['Feature 1', 'Feature 2'],
+      imageUrls: [
+        '/assets/images/homepage/portfolio-sticker-story.png',
+        'image2.jpg',
+      ],
+      links: ['#'],
+      isFeatured: true,
+      route: 'sticker-story',
+    },
   ];
 
   getPortfolioItems(): PortfolioItem[] {

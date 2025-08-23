@@ -3,32 +3,40 @@
 <section class="container">
   <div
     *ngFor="let item of portfolioItems"
-    class="col-12 container portfolio-item"
+    class="col-6 container portfolio-item"
   >
     <div
-      class="col-4 image-container"
-      [ngStyle]="{ 'background-image': 'url(' + item!.imageUrls[0] + ')' }"
+      class="col-12 portfolio-item__container"
+      [style.--bg]="'url(' + item!.imageUrls[0] + ')'"
+      [style.--bg-hover]="
+        'linear-gradient(rgb(30, 30, 30, 0.8), rgb(30, 30, 30, 0.8)),url(' +
+        item!.imageUrls[0] +
+        ')'
+      "
       (click)="navigateToPortfolioItem(item)"
-    ></div>
-    <div class="col-5 portfolio-item-details">
-      <div>
-        <h3>{{ item.title }}</h3>
+      (mouseenter)="revealContent(item)"
+      (mouseleave)="hideContent()"
+    >
+      <div
+        class="portfolio-item-details"
+        *ngIf="hoveredItem === item || isMobile"
+      >
+        <div>
+          <h3>{{ item.title }}</h3>
+        </div>
+        <div>
+          <p>{{ item.summary }}</p>
+        </div>
+        <div>
+          <app-tag
+            *ngFor="let tech of item.technologies"
+            [tag]="tech"
+          ></app-tag>
+        </div>
+        <div>
+          <p class="portfolio-item-details__link">Click to check details -></p>
+        </div>
       </div>
-      <div>
-        <p>{{ item.summary }}</p>
-      </div>
-      <div>
-        <app-tag *ngFor="let tech of item.technologies" [tag]="tech"></app-tag>
-      </div>
-    </div>
-    <div class="ghost-column col-1"></div>
-    <div class="col-2 portfolio-item-actions">
-      <app-button
-        [style]="'primary'"
-        [size]="'medium'"
-        [text]="'View Details'"
-        [routerLink]="['portfolio-item', item.route]"
-      ></app-button>
     </div>
   </div>
 </section>
