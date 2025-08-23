@@ -1,5 +1,5 @@
 .contact-page {
-  background-color: #C3CEDA;
+  background-color: #c3ceda;
   width: 100%;
   padding: 9.4rem;
   color: #1e1e1e;
@@ -29,6 +29,11 @@
 
 .contact-page__text .material-symbols-outlined {
   font-size: 4rem;
+}
+
+.contact-page__linkedin-badge-container {
+  position: relative;
+  min-height: 120px;
 }
 
 @media (max-width: 950px) {
