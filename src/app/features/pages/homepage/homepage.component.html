@@ -2,4 +2,7 @@
 <app-homepage-about class="secondary-background"></app-homepage-about>
 <app-homepage-ai class="tertiary-background"></app-homepage-ai>
 <app-homepage-cv class="default-background"></app-homepage-cv>
-<app-homepage-portfolio class="quaternary-background"></app-homepage-portfolio>
+<app-homepage-portfolio
+  *ngIf="showPortfolio"
+  ="quaternary-background"
+></app-homepage-portfolio>
