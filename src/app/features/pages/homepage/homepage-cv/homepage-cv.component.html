@@ -4,12 +4,25 @@
       <h2>Experience</h2>
     </div>
     <ng-container *ngFor="let item of experienceItems">
-      <app-homepage-cv-item [icon]="item.icon" [title]="item.job"
-        [subtitle]="item.company"></app-homepage-cv-item>
-      <div class="divider" [ngClass]="{'hidden': item === experienceItems[experienceItems.length - 1]}"></div>
+      <app-homepage-cv-item
+        [icon]="item.icon"
+        [title]="item.job"
+        [subtitle]="item.company"
+      ></app-homepage-cv-item>
+      <div
+        class="divider"
+        [ngClass]="{
+          hidden: item === experienceItems[experienceItems.length - 1],
+        }"
+      ></div>
     </ng-container>
     <div class="cv__cta">
-      <a routerLink="cv" class="banner__portfolio-link">View the whole experience</a>
+      <app-button
+        [text]="'View the whole experience'"
+        [size]="'medium'"
+        [style]="'primary'"
+        [routerLink]="['/cv']"
+      ></app-button>
     </div>
   </div>
   <div class="cv-education col-6">
@@ -17,15 +30,25 @@
       <h2>Education</h2>
     </div>
     <ng-container *ngFor="let item of educationItems">
-      <app-homepage-cv-item [icon]="item.icon" [title]="item.course"
-        [subtitle]="item.university"></app-homepage-cv-item>
-        <div class="divider"></div>
+      <app-homepage-cv-item
+        [icon]="item.icon"
+        [title]="item.course"
+        [subtitle]="item.university"
+      ></app-homepage-cv-item>
+      <div class="divider"></div>
     </ng-container>
-    <app-homepage-cv-item [icon]="'School'" [title]="'+15 Certificates in different areas'"
-      [subtitle]="'Udemy, Alura, Unisinos, Franklin Covey, etc.'"></app-homepage-cv-item>
+    <app-homepage-cv-item
+      [icon]="'School'"
+      [title]="'+15 Certificates in different areas'"
+      [subtitle]="'Udemy, Alura, Unisinos, Franklin Covey, etc.'"
+    ></app-homepage-cv-item>
     <div class="cv__cta">
-      <a routerLink="cv" class="banner__portfolio-link">View all education</a>
+      <app-button
+        [text]="'View all education'"
+        [size]="'medium'"
+        [style]="'primary'"
+        [routerLink]="['/cv']"
+      ></app-button>
     </div>
   </div>
-
 </section>

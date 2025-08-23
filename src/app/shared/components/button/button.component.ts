@@ -10,7 +10,7 @@ import { RouterModule } from '@angular/router';
 })
 export class ButtonComponent {
   @Input() style: string = 'primary';
-  @Input() size: string = 'md';
+  @Input() size: string = 'medium';
   @Input() text: string = 'Button';
   @Input() routerLink: string[] = ['/'];
 }
