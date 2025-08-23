@@ -15,7 +15,10 @@ export class PortfolioService {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et odio sed sapien malesuada tincidunt sed hendrerit urna. Mauris consequat ex et metus sodales pulvinar. Nulla et lobortis diam. Nunc pellentesque massa felis, at rhoncus erat viverra a. Morbi laoreet, elit ac lacinia sollicitudin, sapien libero vestibulum felis, in bibendum nisi nisi vel lacus. Donec vestibulum purus tortor, a pellentesque arcu tristique nec. Maecenas id dui vitae metus molestie tincidunt. Donec cursus neque vel neque euismod ultrices. In blandit ultrices imperdiet. Vivamus tincidunt nisl vel augue ultrices convallis. Nam at odio leo. Nulla ut ultricies lacus, non convallis mi. Quisque sollicitudin augue sapien, eget interdum ante tincidunt ac. Pellentesque pharetra vulputate viverra. Fusce vehicula finibus ipsum et malesuada.',
       features: ['Feature 1', 'Feature 2'],
-      imageUrls: ['image1.jpg', 'image2.jpg'],
+      imageUrls: [
+        '/assets/images/homepage/porfolio-personal-website.png',
+        'image2.jpg',
+      ],
       links: ['https://github.com/renangirardi/renangirardi.github.io'],
       isFeatured: true,
       route: 'personal-website',
@@ -24,5 +27,9 @@ export class PortfolioService {
 
   getPortfolioItems(): PortfolioItem[] {
     return this.portfolioItems;
+  }
+
+  getPortfolioItemByRoute(route: string): PortfolioItem | undefined {
+    return this.portfolioItems.find((item) => item.route === route);
   }
 }

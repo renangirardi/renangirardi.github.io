@@ -33,6 +33,6 @@ export class PortfolioComponent {
   }
 
   navigateToPortfolioItem(item: PortfolioItem) {
-    this.router.navigate(['portfolio-item', item.route]);
+    this.router.navigate(['portfolio/portfolio-item', item.route]);
   }
 }

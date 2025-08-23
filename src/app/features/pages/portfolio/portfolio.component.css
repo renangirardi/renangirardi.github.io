@@ -1,12 +1,53 @@
+.container {
+  padding-top: 9.4rem;
+  padding-bottom: 9.4rem;
+}
+
+.portfolio-item {
+  align-items: center;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1.6rem;
+}
+
+.portfolio-item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.portfolio-item-details div {
+  margin-bottom: 1.6rem;
+}
+
+.portfolio-item-details div:last-child {
+  margin-bottom: 0;
+}
+
 @media (min-width: 951px) {
   .container {
-    padding: 9.4rem 12rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 @media (max-width: 950px) {
   .container {
-    padding-top: 9.4rem;
-    padding-bottom: 9.4rem;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+
+  .image-container {
+    height: 30rem;
+  }
+
+  .portfolio-item div {
+    margin-bottom: 1.6rem;
   }
 }

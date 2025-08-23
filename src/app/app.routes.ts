@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+
 import { HomepageComponent } from './features/pages/homepage/homepage.component';
 import { AboutMeComponent } from './features/pages/about-me/about-me.component';
 import { ContactComponent } from './features/pages/contact/contact.component';
@@ -33,7 +34,7 @@ export const routes: Routes = [
     title: 'Renan Girardi - Contact',
   },
   {
-    path: 'portfolio-item/:route',
+    path: 'portfolio/portfolio-item/:route',
     component: PortfolioItemComponent,
   },
 ];

@@ -1,21 +1,35 @@
 <app-inner-banner [title]="'Portfolio'"></app-inner-banner>
 
 <section class="container">
-  <div *ngFor="let item of portfolioItems" class="col-12">
-    <img
-      [src]="item.imageUrls[0]"
-      [alt]="item.title"
+  <div
+    *ngFor="let item of portfolioItems"
+    class="col-12 container portfolio-item"
+  >
+    <div
+      class="col-4 image-container"
+      [ngStyle]="{ 'background-image': 'url(' + item!.imageUrls[0] + ')' }"
       (click)="navigateToPortfolioItem(item)"
-    />
-    <h3>{{ item.title }}</h3>
-    <p>{{ item.summary }}</p>
-    <app-tag *ngFor="let tech of item.technologies" [tag]="tech"></app-tag>
-    <app-button
-      [style]="'primary'"
-      [size]="'medium'"
-      [text]="'View Project'"
-      [routerLink]="['portfolio-item', item.route]"
-    ></app-button>
+    ></div>
+    <div class="col-5 portfolio-item-details">
+      <div>
+        <h3>{{ item.title }}</h3>
+      </div>
+      <div>
+        <p>{{ item.summary }}</p>
+      </div>
+      <div>
+        <app-tag *ngFor="let tech of item.technologies" [tag]="tech"></app-tag>
+      </div>
+    </div>
+    <div class="ghost-column col-1"></div>
+    <div class="col-2 portfolio-item-actions">
+      <app-button
+        [style]="'primary'"
+        [size]="'medium'"
+        [text]="'View Details'"
+        [routerLink]="['portfolio-item', item.route]"
+      ></app-button>
+    </div>
   </div>
 </section>
 
