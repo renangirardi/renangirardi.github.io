@@ -32,9 +32,6 @@
   margin-bottom: 5.8rem;
 }
 
-@media (min-width: 951px) {
-}
-
 @media (max-width: 950px) {
   .about__photo,
   .about__text {

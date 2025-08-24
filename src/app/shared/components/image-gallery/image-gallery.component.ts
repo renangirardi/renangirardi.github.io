@@ -11,9 +11,10 @@ import { ImageGalleryItem } from '../../../core/models/image-gallery-item';
 
 @Component({
   selector: 'app-image-gallery',
+  standalone: true,
   imports: [CommonModule],
   templateUrl: './image-gallery.component.html',
-  styleUrl: './image-gallery.component.css',
+  styleUrls: ['./image-gallery.component.css'],
 })
 export class ImageGalleryComponent {
   @ViewChild('myImg') myImg!: ElementRef;
@@ -57,4 +58,7 @@ export class ImageGalleryComponent {
       this.closeModal();
     }
   }
+}
+function ɵassertType<T>(): readonly any[] | import('@angular/core').Type<any> {
+  throw new Error('Function not implemented.');
 }
