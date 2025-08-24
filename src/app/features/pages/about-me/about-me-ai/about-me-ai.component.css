@@ -2,11 +2,6 @@ h2 {
   text-align: center;
 }
 
-.container {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
-}
-
 .ai-image-gallery {
   margin: 3.2rem 0;
 }
@@ -72,12 +67,5 @@ h2 {
   }
   100% {
     color: sienna;
-  }
-}
-
-@media (min-width: 951px) {
-  .container {
-    padding-left: 0;
-    padding-right: 0;
   }
 }

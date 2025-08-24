@@ -1,15 +1,11 @@
-.cv-summary-container {
-  padding: 9rem 0;
-}
-
 .cv-summary-container__title {
   margin-bottom: 6.4rem;
   text-align: center;
 }
 
 .cv-summary-container__content {
-  margin-bottom: 6.4rem;
   position: relative;
+  margin-bottom: 6.4rem;
 }
 
 .cv-summary-container__content h3 {
@@ -37,13 +33,6 @@
   margin-bottom: 0;
 }
 
-.cv-summary-container__skills-list {
-  display: flex;
-  gap: 2rem;
-  width: 100%;
-  position: relative;
-}
-
 .cv-summary-container__skills-list__column {
   width: 100%;
   display: flex;
@@ -60,14 +49,6 @@
 
 .cv-summary-container__skills-list__title .divider {
   flex: 4;
-}
-
-h4 {
-  font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 2.4rem;
-  margin: 2.4rem 0 1.6rem;
-  flex: 1.5;
 }
 
 @media (max-width: 950px) {

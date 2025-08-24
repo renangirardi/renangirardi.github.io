@@ -1,8 +1,3 @@
-.about-me-content {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
-}
-
 .about-me-content__row-1,
 .about-me-content__row-2 {
   margin-bottom: 1.6rem;
@@ -20,13 +15,6 @@
 
 .about-me-content__text p:last-child {
   margin-bottom: 0;
-}
-
-@media (min-width: 951px) {
-  .about-me-content {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
 
 @media (max-width: 758px) {

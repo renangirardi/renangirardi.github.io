@@ -1,9 +1,6 @@
 .header {
   color: #fff;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -22,6 +19,7 @@
 }
 
 .nav__list {
+  margin: 0 auto;
   list-style-type: none;
   width: 37rem;
   max-height: 3.2rem;
@@ -46,6 +44,10 @@
   display: none;
 }
 
+.header__contact-link {
+  text-align: right;
+}
+
 @media (min-width: 951px) {
   .header {
     padding: 3.2rem 0 5.2rem;
@@ -53,6 +55,12 @@
 }
 
 @media (max-width: 950px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .header .header__contact-link,
   .nav {
     display: none;
@@ -118,8 +126,4 @@
 }
 
 @media (max-width: 768px) {
-  .header {
-    padding-top: 3.2rem;
-    padding-bottom: 5.2rem;
-  }
 }

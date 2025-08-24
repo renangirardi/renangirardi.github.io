@@ -12,11 +12,11 @@
 
 :root {
   /* breakpoints */
-  --max-width: 1200px;
+  --max-width: 1240px;
 
   /* gutters */
-  --gutter-desktop: 24px;
-  --gutter-mobile: 16px;
+  --gutter-desktop: 2.4rem;
+  --gutter-mobile: 1.6rem;
 
   /* columns */
   --grid-columns: 12;
@@ -33,11 +33,35 @@
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 var(--gutter-mobile);
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 
   display: grid;
   grid-template-columns: repeat(var(--grid-columns), 1fr);
-  gap: var(--gutter-mobile);
+  gap: var(--gutter-desktop);
+}
+
+.container-sec {
+  max-width: var(--max-width);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), 1fr);
+  gap: var(--gutter-desktop);
+}
+
+@media (max-width: 950px) {
+  .container {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    padding-left: var(--gutter-mobile);
+    padding-right: var(--gutter-mobile);
+    gap: var(--gutter-mobile);
+  }
+
+  .container-sec {
+    gap: var(--gutter-mobile);
+  }
 }
 
 html {
@@ -61,6 +85,14 @@ h3 {
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 1.4;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  margin: 2.4rem 0 1.6rem;
+  flex: 1.5;
 }
 
 p {
@@ -214,24 +246,6 @@ img {
     font-weight: 400;
   }
 
-  .header {
-    padding-top: 3.2rem;
-    padding-bottom: 5.2rem;
-    color: #fff;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .about__content,
-  .cv,
-  .ai,
-  .ai__content {
-    flex-direction: column;
-    gap: 6.4rem;
-  }
-
   .contact-page {
     padding: 5.2rem;
   }
@@ -243,26 +257,6 @@ img {
 
   .contact-page__text {
     width: 100%;
-  }
-
-  .about__content {
-    width: 100%;
-    padding: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .about__photo {
-    width: 100%;
-    max-width: 80%;
-  }
-
-  .cv__heading {
-    margin-bottom: 0;
-  }
-
-  .cv__cta {
-    margin-top: 3.2rem;
   }
 
   .image-slider {
@@ -277,10 +271,6 @@ img {
     height: auto;
     width: 80%;
     aspect-ratio: 1 / 1;
-  }
-
-  .cv__column {
-    width: 100%;
   }
 
   .portfolio__latest-works {
@@ -304,16 +294,5 @@ img {
 @media (max-width: 768px) {
   html {
     font-size: 50%;
-  }
-
-  .banner__heading {
-    font-size: 4.8rem;
-    line-height: 6rem;
-  }
-
-  .about__heading,
-  .cv__heading h2,
-  .portfolio__heading {
-    font-size: 3.6rem;
   }
 }

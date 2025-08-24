@@ -51,7 +51,17 @@ select option {
   padding: 0;
 }
 
+@media (max-width: 950px) {
+  .cv-education-certificate__item {
+    grid-column: span 6;
+  }
+}
+
 @media (max-width: 758px) {
+  .cv-education-certificate__item {
+    grid-column: span 12;
+  }
+
   .cv-education-certificates__header {
     flex-direction: column;
     align-items: center;
@@ -60,9 +70,5 @@ select option {
   .cv-education-certificates__sort {
     position: relative;
     margin-top: 1.6rem;
-  }
-
-  .cv-education-certificates {
-    display: none;
   }
 }

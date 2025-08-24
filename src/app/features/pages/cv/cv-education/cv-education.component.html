@@ -19,9 +19,9 @@
         </select>
       </div>
     </div>
-    <div class="cv-education-certificates__container container">
+    <div class="cv-education-certificates__container container-sec">
       <app-cv-education-certificate
-        class="col-4"
+        class="cv-education-certificate__item col-4"
         *ngFor="let certificate of sortedCertificates"
         [certificate]="certificate"
       ></app-cv-education-certificate>

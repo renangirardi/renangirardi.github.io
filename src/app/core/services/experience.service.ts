@@ -8,7 +8,7 @@ export class ExperienceService {
   private experienceItems: Experience[] = [
     {
       icon: 'code',
-      job: 'Software Engineer Mid-Level',
+      job: 'Software Engineer',
       company: 'Dell Technologies',
       year: '2021 - Present',
       city: 'Eldorado do Sul, Brazil',

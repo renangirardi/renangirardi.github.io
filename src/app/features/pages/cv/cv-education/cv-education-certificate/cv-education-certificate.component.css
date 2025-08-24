@@ -15,7 +15,7 @@
   background-color: #5a7b92;
 }
 
-.cv-education-certificate__logo-container{
+.cv-education-certificate__logo-container {
   flex-shrink: 0;
 }
 
@@ -34,4 +34,8 @@
 .cv-education-certificate__logo {
   width: 6rem;
   border-radius: 50%;
+}
+
+h4 {
+  margin: 0;
 }
