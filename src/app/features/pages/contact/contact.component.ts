@@ -15,6 +15,10 @@ export class ContactComponent implements AfterViewInit {
 
   constructor(private elementRef: ElementRef) {}
 
+  ngOnInit(): void {
+    this.loadLinkedInScript();
+  }
+
   ngAfterViewInit() {
     const observer = new MutationObserver(() => {
       const iframe = this.elementRef.nativeElement.querySelector('iframe');
@@ -31,5 +35,14 @@ export class ContactComponent implements AfterViewInit {
       childList: true,
       subtree: true,
     });
+  }
+
+  loadLinkedInScript(): void {
+    const script = document.createElement('script');
+    script.src = 'https://platform.linkedin.com/badges/js/profile.js';
+    script.async = true;
+    script.defer = true;
+    script.type = 'text/javascript';
+    document.body.appendChild(script);
   }
 }
