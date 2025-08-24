@@ -28,10 +28,10 @@ describe('InnerWipContentComponent', () => {
     expect(main.classList).toContain('main-wip-page');
   });
 
-  it('should render h1 with "Work in Progress"', () => {
-    const h1 = fixture.nativeElement.querySelector('.wip-message h1');
-    expect(h1).toBeTruthy();
-    expect(h1.textContent).toContain('Work in Progress');
+  it('should render h2 with "Work in Progress"', () => {
+    const h2 = fixture.nativeElement.querySelector('.wip-message h2');
+    expect(h2).toBeTruthy();
+    expect(h2.textContent).toContain('Work in Progress');
   });
 
   it('should render image with correct src', () => {
