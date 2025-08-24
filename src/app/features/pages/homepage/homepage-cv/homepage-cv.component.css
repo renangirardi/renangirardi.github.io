@@ -1,43 +1,43 @@
 /******** EXP & EDU AREA ********/
 
 .cv {
-    width: 100%;
-    padding-top: 9rem;
-    padding-bottom: 9rem;
-    align-items: flex-start;
+  width: 100%;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  align-items: flex-start;
 }
 
 .cv__column--item {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 
-    margin-top: 1.6rem;;
+  margin-top: 1.6rem;
 }
 
 .cv__heading {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    margin-bottom: 6.4rem;
+  margin-bottom: 6.4rem;
 }
 
 .cv__cta {
-    width: 100%;
-    margin-top: 6.4rem;
+  width: 100%;
+  margin-top: 6.4rem;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .cv__cta a {
-    color: #fff;
+  color: #fff;
 }
 
 app-homepage-cv-item {
@@ -54,5 +54,9 @@ app-homepage-cv-item {
 @media (max-width: 768px) {
   .cv {
     display: block;
+  }
+
+  .cv-experience {
+    margin-bottom: 12.8rem;
   }
 }

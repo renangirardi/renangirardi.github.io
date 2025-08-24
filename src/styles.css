@@ -67,7 +67,7 @@ p {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2;
-  text-align: justify;
+  text-align: left;
 }
 
 a {
@@ -208,23 +208,6 @@ img {
   }
 }
 
-@media (max-width: 768px) {
-  html {
-    font-size: 50%;
-  }
-
-  .banner__heading {
-    font-size: 4.8rem;
-    line-height: 6rem;
-  }
-
-  .about__heading,
-  .cv__heading h2,
-  .portfolio__heading {
-    font-size: 3.6rem;
-  }
-}
-
 @media (max-width: 950px) {
   html {
     font-size: 70%;
@@ -282,12 +265,6 @@ img {
     margin-top: 3.2rem;
   }
 
-  .banner__content {
-    padding-top: 24rem;
-    flex-direction: column-reverse;
-    gap: 6.4rem;
-  }
-
   .image-slider {
     width: 55%;
     height: auto;
@@ -321,5 +298,22 @@ img {
 
   .ghost-column {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .banner__heading {
+    font-size: 4.8rem;
+    line-height: 6rem;
+  }
+
+  .about__heading,
+  .cv__heading h2,
+  .portfolio__heading {
+    font-size: 3.6rem;
   }
 }

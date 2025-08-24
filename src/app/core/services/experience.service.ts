@@ -38,6 +38,8 @@ export class ExperienceService {
         'Contributed to email marketing, web materials, wireframes, and UI/UX documentation.',
         'Developed a portal for product designers using WordPress, supporting the dissemination of learning materials and collaborative resources.',
         'Received intensive training in UI, UX, agile, prototyping, and human-centered design.',
+        'Applied modern frontend practices to improve usability, accessibility, and performance across multiple projects.',
+        'Supported knowledge-sharing initiatives, helping strengthen design consistency and team productivity.',
       ],
       skills: ['WordPress', 'UI design', 'UX design', 'Figma', 'Prototyping'],
       logo: 'dell_logo.png',
@@ -52,6 +54,8 @@ export class ExperienceService {
         'Led business management, marketing strategies, client relationship, and digital platforms including website and social media.',
         'Managed digital advertising campaigns with Google Ads and optimized online presence.',
         'Developed and maintained the clinics corporate website using WordPress, contributing to digital visibility and client acquisition.',
+        'Implemented SEO best practices and content strategies to improve search rankings.',
+        'Analyzed campaign performance through metrics and reports, driving data-informed decisions that strengthened brand positioning and customer reach.',
       ],
       skills: [
         'WordPress',
@@ -71,7 +75,8 @@ export class ExperienceService {
       description: [
         'Provided consulting services for small businesses in the areas of marketing, operations, and technology.',
         'Developed customized solutions to improve client business processes and drive growth.',
-        'Conducted workshops and training sessions on digital marketing strategies and tools.',
+        'Conducted workshops and training sessions on digital marketing strategies, tools, and best practices, empowering clients to strengthen their online presence.',
+        'Supported entrepreneurs in adopting digital platforms, enhancing decision-making through data insights, and creating sustainable strategies for long-term success.',
       ],
       skills: [
         'Wordpress',

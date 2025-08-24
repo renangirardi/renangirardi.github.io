@@ -15,7 +15,15 @@ h2 {
   margin: 3.2rem 0 0;
 }
 
-.chatgpt, .gemini, .claude, .github-copilot, .windsurf, .stable-diffusion, .midjourney, .dall-e, .cthulhu {
+.chatgpt,
+.gemini,
+.claude,
+.github-copilot,
+.windsurf,
+.stable-diffusion,
+.midjourney,
+.dall-e,
+.cthulhu {
   font-weight: bold;
 }
 
@@ -52,7 +60,7 @@ h2 {
 }
 
 .cthulhu {
-  animation: colorChange 2s infinite alternate;
+  animation: colorChange 1s infinite alternate;
 }
 
 @keyframes colorChange {
@@ -63,7 +71,7 @@ h2 {
     color: green;
   }
   100% {
-    color: darkgreen;
+    color: sienna;
   }
 }
 
