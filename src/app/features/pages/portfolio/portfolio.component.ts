@@ -31,7 +31,9 @@ export class PortfolioComponent {
   ) {}
 
   ngOnInit() {
-    this.portfolioItems = this.portfolioService.getPortfolioItems();
+    this.portfolioService.getPortfolioItems().then((items) => {
+      this.portfolioItems = items;
+    });
     this.checkViewport();
   }
 

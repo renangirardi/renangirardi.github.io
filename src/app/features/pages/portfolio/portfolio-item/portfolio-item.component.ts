@@ -22,7 +22,9 @@ export class PortfolioItemComponent implements OnInit {
   ngOnInit() {
     const routeParam = this.route.snapshot.paramMap.get('route');
     if (routeParam) {
-      this.item = this.portfolioService.getPortfolioItemByRoute(routeParam);
+      this.portfolioService.getPortfolioItemByRoute(routeParam).then((item) => {
+        this.item = item;
+      });
     }
   }
 }

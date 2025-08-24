@@ -11,12 +11,14 @@ import { CvExperienceItemComponent } from './cv-experience-item/cv-experience-it
   selector: 'app-cv-experience',
   imports: [CommonModule, CvExperienceItemComponent, FadeInDirective],
   templateUrl: './cv-experience.component.html',
-  styleUrl: './cv-experience.component.css'
+  styleUrl: './cv-experience.component.css',
 })
 export class CvExperienceComponent {
   experienceItems!: Experience[];
 
   constructor(private experienceService: ExperienceService) {
-    this.experienceItems = this.experienceService.getExperienceItems();
+    this.experienceService.getExperienceItems().then((items) => {
+      this.experienceItems = items;
+    });
   }
 }

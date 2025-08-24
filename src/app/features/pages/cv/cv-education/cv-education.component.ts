@@ -15,10 +15,10 @@ import { CvEducationCertificateComponent } from './cv-education-certificate/cv-e
     CommonModule,
     CvEducationItemComponent,
     CvEducationCertificateComponent,
-    FadeInDirective
+    FadeInDirective,
   ],
   templateUrl: './cv-education.component.html',
-  styleUrl: './cv-education.component.css'
+  styleUrl: './cv-education.component.css',
 })
 export class CvEducationComponent {
   educationItems!: Education[];
@@ -26,21 +26,31 @@ export class CvEducationComponent {
   sortedCertificates!: Certificate[];
 
   constructor(private educationService: EducationService) {
-    this.educationItems = this.educationService.getEducationItems();
-    this.certificates = this.educationService.getCertificates();
-    this.sortedCertificates = this.certificates;
+    this.educationService.getEducationItems().then((items) => {
+      this.educationItems = items;
+    });
+    this.educationService.getCertificates().then((certificates) => {
+      this.certificates = certificates;
+      this.sortedCertificates = certificates;
+    });
   }
 
-  sortCertificates(event: Event) {
+  async sortCertificates(event: Event) {
     const selectElement = event.target as HTMLSelectElement;
     const selectedValue = selectElement.value;
 
+    const certificates = await this.educationService.getCertificates();
+
     if (selectedValue === 'name') {
-      this.sortedCertificates = this.educationService.getCertificates().sort((a, b) => a.name.localeCompare(b.name));
+      this.sortedCertificates = certificates.sort((a, b) =>
+        a.name.localeCompare(b.name),
+      );
     } else if (selectedValue === 'year') {
-      this.sortedCertificates = this.educationService.getCertificates().sort((a, b) => b.year - a.year);
+      this.sortedCertificates = certificates.sort((a, b) => b.year - a.year);
     } else {
-      this.sortedCertificates = this.educationService.getCertificates().sort((a, b) => a.institution.localeCompare(b.institution));
+      this.sortedCertificates = certificates.sort((a, b) =>
+        a.institution.localeCompare(b.institution),
+      );
     }
   }
 }

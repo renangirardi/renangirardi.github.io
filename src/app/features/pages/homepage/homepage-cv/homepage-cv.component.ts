@@ -31,7 +31,11 @@ export class HomepageCvComponent {
     private educationService: EducationService,
     private experienceService: ExperienceService,
   ) {
-    this.educationItems = this.educationService.getEducationItems();
-    this.experienceItems = this.experienceService.getExperienceItems();
+    this.educationService.getEducationItems().then((items) => {
+      this.educationItems = items;
+    });
+    this.experienceService.getExperienceItems().then((items) => {
+      this.experienceItems = items;
+    });
   }
 }
