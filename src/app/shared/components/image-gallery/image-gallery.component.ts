@@ -37,9 +37,17 @@ export class ImageGalleryComponent {
 
   loadGalleryImages() {
     if (this.galleryImages === 'about-me-1') {
-      this.imageGalleryItems = this.imageGalleryService.getAboutMeImages1();
+      this.imageGalleryService.getAboutMeImages().then((images) => {
+        for (let index = 0; index < 6; index++) {
+          this.imageGalleryItems.push(images[index]);
+        }
+      });
     } else if (this.galleryImages === 'about-me-2') {
-      this.imageGalleryItems = this.imageGalleryService.getAboutMeImages2();
+      this.imageGalleryService.getAboutMeImages().then((images) => {
+        for (let index = 6; index < 12; index++) {
+          this.imageGalleryItems.push(images[index]);
+        }
+      });
     }
   }
 

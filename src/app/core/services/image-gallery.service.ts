@@ -6,65 +6,12 @@ import { ImageGalleryItem } from '../models/image-gallery-item';
   providedIn: 'root',
 })
 export class ImageGalleryService {
-  private aboutMeImages1: ImageGalleryItem[] = [
-    {
-      src: 'assets/images/about-me/ai.cthulhu__01.jpg',
-      alt: 'AI Cthulhu',
-    },
-    {
-      src: 'assets/images/about-me/ai.cthulhu__02.jpg',
-      alt: 'AI Cthulhu',
-    },
-    {
-      src: 'assets/images/about-me/ai.cthulhu__03.jpg',
-      alt: 'AI Cthulhu',
-    },
-    {
-      src: 'assets/images/about-me/ai.cthulhu__04.jpg',
-      alt: 'AI Cthulhu',
-    },
-    {
-      src: 'assets/images/about-me/ai.cthulhu__05.jpg',
-      alt: 'AI Cthulhu',
-    },
-    {
-      src: 'assets/images/about-me/ai.cthulhu__06.jpg',
-      alt: 'AI Cthulhu',
-    },
-  ];
+  imagesUrl =
+    'https://gist.githubusercontent.com/renangirardi/740a645a2ca4fad5755d145398abf6bb/raw/20a3aa57c54a157a989f024134d8ed3ce64d807b/images.json';
 
-  private aboutMeImages2: ImageGalleryItem[] = [
-    {
-      src: 'assets/images/about-me/ai.cthulhu__07.jpg',
-      alt: 'AI Cthulhu',
-    },
-    {
-      src: 'assets/images/about-me/ai.cthulhu__08.jpg',
-      alt: 'AI Cthulhu',
-    },
-    {
-      src: 'assets/images/about-me/ai.cthulhu__09.jpg',
-      alt: 'AI Cthulhu',
-    },
-    {
-      src: 'assets/images/about-me/ai.cthulhu__10.jpg',
-      alt: 'AI Cthulhu',
-    },
-    {
-      src: 'assets/images/about-me/ai.cthulhu__11.jpg',
-      alt: 'AI Cthulhu',
-    },
-    {
-      src: 'assets/images/about-me/ai.cthulhu__12.jpg',
-      alt: 'AI Cthulhu',
-    },
-  ];
-
-  getAboutMeImages1(): ImageGalleryItem[] {
-    return [...this.aboutMeImages1];
-  }
-
-  getAboutMeImages2(): ImageGalleryItem[] {
-    return [...this.aboutMeImages2];
+  async getAboutMeImages(): Promise<ImageGalleryItem[]> {
+    const response = await fetch(this.imagesUrl);
+    const data = await response.json();
+    return data;
   }
 }
