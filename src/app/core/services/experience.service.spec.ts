@@ -14,14 +14,14 @@ describe('ExperienceService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should return an array of experience items', () => {
-    const items = service.getExperienceItems();
+  it('should return an array of experience items', async () => {
+    const items = await service.getExperienceItems();
     expect(Array.isArray(items)).toBeTrue();
     expect(items.length).toBeGreaterThan(0);
   });
 
-  it('should return experience items with required properties', () => {
-    const items = service.getExperienceItems();
+  it('should return experience items with required properties', async () => {
+    const items = await service.getExperienceItems();
     items.forEach((item) => {
       expect(item.icon).toBeDefined();
       expect(item.job).toBeDefined();
@@ -34,14 +34,16 @@ describe('ExperienceService', () => {
     });
   });
 
-  it('should not mutate experienceItems when getExperienceItems is called', () => {
-    const items = service.getExperienceItems();
+  it('should not mutate experienceItems when getExperienceItems is called', async () => {
+    const items = await service.getExperienceItems();
     items.push({} as Experience);
-    expect(service.getExperienceItems().length).not.toEqual(items.length);
+    expect(
+      await service.getExperienceItems().then((i) => i.length),
+    ).not.toEqual(items.length);
   });
 
-  it('should contain specific experience data', () => {
-    const items = service.getExperienceItems();
+  it('should contain specific experience data', async () => {
+    const items = await service.getExperienceItems();
     const dellExperience = items.find(
       (item) => item.company === 'Dell Technologies',
     );
@@ -49,22 +51,22 @@ describe('ExperienceService', () => {
     expect(dellExperience?.skills).toContain('Angular');
   });
 
-  it('should have unique job titles', () => {
-    const items = service.getExperienceItems();
+  it('should have unique job titles', async () => {
+    const items = await service.getExperienceItems();
     const jobs = items.map((item) => item.job);
     const uniqueJobs = Array.from(new Set(jobs));
     expect(jobs.length).toEqual(uniqueJobs.length);
   });
 
-  it('should have at least one skill per experience item', () => {
-    const items = service.getExperienceItems();
+  it('should have at least one skill per experience item', async () => {
+    const items = await service.getExperienceItems();
     items.forEach((item) => {
       expect(item.skills.length).toBeGreaterThan(0);
     });
   });
 
-  it('should have at least one description per experience item', () => {
-    const items = service.getExperienceItems();
+  it('should have at least one description per experience item', async () => {
+    const items = await service.getExperienceItems();
     items.forEach((item) => {
       expect(item.description.length).toBeGreaterThan(0);
     });
