@@ -6,7 +6,7 @@ import { PortfolioItem } from '../models/portfolio-item';
 })
 export class PortfolioService {
   portfolioUrl =
-    'https://gist.githubusercontent.com/renangirardi/22a1204e5942b07e74d82ffe187211ef/raw/9f3bfcb8fac190f6282aa7f42d60ed3a95e82733/portfolio.json';
+    'https://gist.githubusercontent.com/renangirardi/22a1204e5942b07e74d82ffe187211ef/raw/414169c6562bc809519d00795d74288a77084846/portfolio.json';
 
   async getPortfolioItems(): Promise<PortfolioItem[]> {
     try {

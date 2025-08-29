@@ -1,1 +1,36 @@
-<app-inner-wip-content></app-inner-wip-content>
+<app-inner-banner [title]="item!.title"></app-inner-banner>
+<section class="container">
+  <div class="col-12 container-sec portfolio-item__detailed">
+    <div class="col-12 portfolio-item__detailed-content">
+      <div class="col-12 portfolio-item__detailed-content-section">
+        <h3>Project Overview</h3>
+        <h4>{{ item!.year }}</h4>
+        <p>{{ item!.description }}</p>
+      </div>
+      <div class="col-12 portfolio-item__detailed-content-section">
+        <h3>Features</h3>
+        <div>
+          <app-tag *ngFor="let tech of item!.features" [tag]="tech"></app-tag>
+        </div>
+      </div>
+      <div class="col-12 portfolio-item__detailed-content-section">
+        <h3>Technologies Used</h3>
+        <div>
+          <app-tag
+            *ngFor="let tech of item!.technologies"
+            [tag]="tech"
+          ></app-tag>
+        </div>
+      </div>
+      <div
+        class="col-12 portfolio-item__detailed-content-section"
+        *ngIf="item!.links"
+      >
+        <h3>Project Link</h3>
+        <a [href]="item!.links" target="_blank" rel="noopener noreferrer">{{
+          item!.links
+        }}</a>
+      </div>
+    </div>
+  </div>
+</section>

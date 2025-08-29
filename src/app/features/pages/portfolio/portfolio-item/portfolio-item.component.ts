@@ -3,11 +3,13 @@ import { ActivatedRoute } from '@angular/router';
 
 import { PortfolioItem } from '../../../../core/models/portfolio-item';
 import { PortfolioService } from '../../../../core/services/portfolio.service';
-import { InnerWipContentComponent } from '../../../components/inner-wip-content/inner-wip-content.component';
+import { InnerBannerComponent } from '../../../components/inner-banner/inner-banner.component';
+import { CommonModule } from '@angular/common';
+import { TagComponent } from '../../../../shared/components/tag/tag.component';
 
 @Component({
   selector: 'app-portfolio-item',
-  imports: [InnerWipContentComponent, InnerWipContentComponent],
+  imports: [InnerBannerComponent, CommonModule, TagComponent],
   templateUrl: './portfolio-item.component.html',
   styleUrl: './portfolio-item.component.css',
 })
