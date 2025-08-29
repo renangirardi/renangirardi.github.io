@@ -1,0 +1,24 @@
+<div class="image-slider__container">
+  <img
+    #image
+    class="image-slider__item"
+    *ngFor="let image of imagesSrc"
+    [src]="image"
+  />
+  <div class="image-slider__controls">
+    <div class="image-slider__controls-arrow" (click)="nextImage(-1)">
+      <span class="material-symbols-outlined"> arrow_left </span>
+    </div>
+    <div class="image-slider__controls-arrow" (click)="nextImage(1)">
+      <span class="material-symbols-outlined"> arrow_right </span>
+    </div>
+  </div>
+  <div class="image-slider__dots">
+    <span
+      #dot
+      *ngFor="let image of imagesSrc; let i = index"
+      class="image-slider__dot"
+      (click)="chooseImage(i + 1)"
+    ></span>
+  </div>
+</div>
