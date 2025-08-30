@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
+
 import { Experience } from '../models/experience';
+import { Gists } from '../utils/gists/gists';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ExperienceService {
-  experienceUrl =
-    'https://gist.githubusercontent.com/renangirardi/15a81d542ec3845eedc93af4cca4bf1e/raw/3b38c20495b0888cf6eab2957c556d5e9ee7d57f/experience.json';
+  experienceUrl = Gists.EXPERIENCE_URL;
 
   async getExperienceItems(): Promise<Experience[]> {
     try {

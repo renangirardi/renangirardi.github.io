@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
+
 import { Education } from '../models/education';
 import { Certificate } from '../models/certificate';
+import { Gists } from '../utils/gists/gists';
 
 @Injectable({
   providedIn: 'root',
 })
 export class EducationService {
-  educationUrl =
-    'https://gist.githubusercontent.com/renangirardi/00cbf87a7d3fb94582f8a577559d93a6/raw/c8663de31977d2115570548fe1a75e5d2294aac0/education.json';
+  educationUrl = Gists.EDUCATION_URL;
 
-  certificatesUrl =
-    'https://gist.githubusercontent.com/renangirardi/89f32308a6994500ea23a80bc61d37b7/raw/ae19374f563b7f8a2951b58a68f669acdd6dc5ae/certificates.json';
+  certificatesUrl = Gists.CERTIFICATES_URL;
 
   async getEducationItems(): Promise<Education[]> {
     try {
