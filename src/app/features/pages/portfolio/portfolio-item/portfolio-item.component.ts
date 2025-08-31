@@ -21,7 +21,17 @@ import { ImageSliderComponent } from '../../../../shared/components/image-slider
   styleUrl: './portfolio-item.component.css',
 })
 export class PortfolioItemComponent implements OnInit {
-  item?: PortfolioItem;
+  item: PortfolioItem = {
+    title: '',
+    year: '',
+    summary: '',
+    route: '',
+    description: '',
+    imageUrls: [],
+    features: [],
+    technologies: [],
+    links: [],
+  };
 
   constructor(
     private portfolioService: PortfolioService,
@@ -32,7 +42,7 @@ export class PortfolioItemComponent implements OnInit {
     const routeParam = this.route.snapshot.paramMap.get('route');
     if (routeParam) {
       this.portfolioService.getPortfolioItemByRoute(routeParam).then((item) => {
-        this.item = item;
+        this.item = item!;
       });
     }
   }

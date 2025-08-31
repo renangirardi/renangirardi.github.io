@@ -36,6 +36,10 @@ export class ImageSliderComponent implements AfterViewInit {
     const imagesArray = this.images.toArray();
     const dotsArray = this.dots.toArray();
 
+    if (imagesArray.length === 0 || dotsArray.length === 0) {
+      return;
+    }
+
     if (index > imagesArray.length) {
       this.slideIndex = 1;
     }
