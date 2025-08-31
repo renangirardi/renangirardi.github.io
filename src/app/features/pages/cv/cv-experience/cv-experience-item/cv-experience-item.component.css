@@ -20,6 +20,12 @@
   max-width: 120px;
 }
 
+.cv-experience-item__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
 .cv-experience-item__info {
   flex: 2;
 }

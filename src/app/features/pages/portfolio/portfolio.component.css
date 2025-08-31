@@ -64,6 +64,12 @@
   text-decoration: underline;
 }
 
+.portfolio-item-details__technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
 @media (min-width: 951px) {
   .container {
     padding-left: 0;

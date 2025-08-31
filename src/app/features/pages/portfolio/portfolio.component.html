@@ -27,7 +27,7 @@
         <div>
           <p>{{ item.summary }}</p>
         </div>
-        <div>
+        <div class="portfolio-item-details__technologies">
           <app-tag
             *ngFor="let tech of item.technologies"
             [tag]="tech"

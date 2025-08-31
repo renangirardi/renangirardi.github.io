@@ -1,0 +1,11 @@
+<svg
+  *ngIf="icon"
+  role="img"
+  viewBox="0 0 24 24"
+  [attr.width]="size"
+  [attr.height]="size"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>{{ icon.title }}</title>
+  <path [attr.d]="icon.path" [attr.fill]="color || '#' + icon.hex"></path>
+</svg>

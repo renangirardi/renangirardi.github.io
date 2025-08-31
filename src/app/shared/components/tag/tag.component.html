@@ -1,3 +1,8 @@
 <div class="tag">
-  {{ tag }}
+  <app-simple-icons
+    [iconName]="tag"
+    [size]="16"
+    [color]="'#1e1e1e'"
+  ></app-simple-icons>
+  <span class="tag-label">{{ tag }}</span>
 </div>

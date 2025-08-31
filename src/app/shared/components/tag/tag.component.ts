@@ -1,12 +1,13 @@
 import { Component, Input } from '@angular/core';
 
+import { SimpleIconsComponent } from '../simple-icons/simple-icons.component';
+
 @Component({
   selector: 'app-tag',
-  imports: [],
+  imports: [SimpleIconsComponent],
   templateUrl: './tag.component.html',
-  styleUrl: './tag.component.css'
+  styleUrl: './tag.component.css',
 })
 export class TagComponent {
-  @Input() tag!: string;
-
+  @Input() tag: string = '';
 }
