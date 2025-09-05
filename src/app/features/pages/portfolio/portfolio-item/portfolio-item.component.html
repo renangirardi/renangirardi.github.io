@@ -8,7 +8,9 @@
         <p>{{ item!.description }}</p>
       </div>
 
-      <app-image-slider [imagesSrc]="item!.imageUrls"></app-image-slider>
+      <div class="col-12 portfolio-item__detailed-content-section">
+        <app-image-slider [imagesSrc]="item!.imageUrls"></app-image-slider>
+      </div>
 
       <div class="col-12 portfolio-item__detailed-content-section">
         <h3>Features</h3>
@@ -16,6 +18,7 @@
           <app-tag *ngFor="let tech of item!.features" [tag]="tech"></app-tag>
         </div>
       </div>
+
       <div class="col-12 portfolio-item__detailed-content-section">
         <h3>Technologies Used</h3>
         <div>
@@ -25,15 +28,11 @@
           ></app-tag>
         </div>
       </div>
+
       <div
         class="col-12 portfolio-item__detailed-content-section"
         *ngIf="item!.links"
-      >
-        <h3>Project Link</h3>
-        <a [href]="item!.links" target="_blank" rel="noopener noreferrer">{{
-          item!.links
-        }}</a>
-      </div>
+      ></div>
     </div>
   </div>
 </section>
