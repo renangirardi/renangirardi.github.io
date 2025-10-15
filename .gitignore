@@ -37,6 +37,7 @@ yarn-error.log
 testem.log
 /typings
 /src/app/core/utils/gists
+gist.json
 
 # System files
 .DS_Store
