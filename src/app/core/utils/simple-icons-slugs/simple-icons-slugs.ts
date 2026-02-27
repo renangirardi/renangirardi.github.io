@@ -21,4 +21,7 @@ export const simpleIconsSlugs: Record<string, string> = {
   MySQL: 'siMysql',
   WordPress: 'siWordpress',
   Figma: 'siFigma',
+  'Tailwind CSS': 'siTailwindcss',
+  NativeWind: 'siTailwindcss',
+  Expo: 'siExpo',
 };
