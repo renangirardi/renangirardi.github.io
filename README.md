@@ -1,7 +1,5 @@
 # 🚀 Renan Girardi | Personal Portfolio
 
-![Portfolio Banner](link-to-your-banner-image-or-gif.gif)
-
 A modern, highly modular personal portfolio website built with **Angular 19**. This application serves as an interactive resume and project showcase, designed with a focus on component-driven architecture, clean code principles, and a seamless, responsive user experience.
 
 Check out the live version here: [renangirardi.github.io](https://renangirardi.github.io)
