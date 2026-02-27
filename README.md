@@ -1,59 +1,63 @@
-# AngularSite
+# 🚀 Renan Girardi | Personal Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+![Portfolio Banner](link-to-your-banner-image-or-gif.gif)
 
-## Development server
+A modern, highly modular personal portfolio website built with **Angular 19**. This application serves as an interactive resume and project showcase, designed with a focus on component-driven architecture, clean code principles, and a seamless, responsive user experience.
 
-To start a local development server, run:
+Check out the live version here: [renangirardi.github.io](https://renangirardi.github.io)
 
-```bash
-ng serve
-```
+## ✨ Key Features
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Dynamic Portfolio & CV:** Structured presentation of professional experience, education, and projects, managed through dedicated Angular services and strongly typed models.
+- **Custom UI Components:** Fully custom-built, lightweight UI elements (Image Galleries, Sliders, Skill Bars, and Tags) crafted without relying on heavy external component libraries (like Material or Bootstrap).
+- **Interactive "About Me" Experience:** Features a unique dual-mode "About Me" section, including an AI-generated/Thematic view alongside the professional content.
+- **GitHub Gist Integration:** Seamless integration to fetch and display code snippets directly from GitHub Gists.
+- **Scroll Animations:** Smooth, native user experience using a custom structural directive (`fade-in.directive`) to trigger animations as elements enter the viewport.
+- **Automated Deployment:** Fully configured CI/CD pipeline using `angular-cli-ghpages` to deploy directly to GitHub Pages.
 
-## Code scaffolding
+## 🛠 Tech Stack
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Framework:** Angular 19
+- **Language:** TypeScript
+- **Styling:** CSS3 (Native CSS with modern features)
+- **Reactivity:** RxJS
+- **Icons:** Simple Icons
+- **Testing:** Karma & Jasmine
+- **Linting/Formatting:** ESLint & Prettier
+- **Deployment:** GitHub Pages
 
-```bash
-ng generate component component-name
-```
+## 🏗 Architecture & Engineering Decisions
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+As a Mid-Level Front-End Developer, I architected this project focusing on maintainability, scalability, and performance:
 
-```bash
-ng generate --help
-```
+- **Strict Folder Architecture:** The app is strictly divided into `core` (singletons, models, services, guards), `features` (smart components and routed pages), and `shared` (dumb/reusable UI components). This ensures clear boundaries and makes the codebase highly scalable.
+- **Building over Importing:** Instead of installing third-party packages for UI elements, I engineered custom solutions for complex elements like the `image-slider` and `image-gallery`. This drastically reduced the final bundle size and gave me 100% control over the DOM and styles.
+- **Dynamic Icon Rendering:** Implemented a scalable icon system using the `simple-icons` library combined with a custom utility function (`simple-icons-slugs.ts`) to dynamically fetch and render SVG brand icons across the app.
+- **Custom Directives for Performance:** Created a reusable `fade-in` directive using the Intersection Observer API to handle scroll animations natively, avoiding the overhead of heavy animation libraries.
+- **Strong Typing:** Leveraged TypeScript to its fullest by defining strict interfaces and models (e.g., `experience.ts`, `certificate.ts`) for all data flowing through the `core` services.
 
-## Building
+## 🚀 How to Run Locally
 
-To build the project run:
+1. **Clone the repository:**
+   git clone https://github.com/renangirardi/renangirardi.github.io.git
+   cd renangirardi.github.io
+2. **Install dependencies:**
+   npm install
 
-```bash
-ng build
-```
+3. **Start the development server:**
+   npm start
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+4. **Open in your browser:**
+   Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Running unit tests
+## 🧪 Running Tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+To execute unit tests with Karma and Jasmine:
+npm run test
 
-```bash
-ng test
-```
+To generate a code coverage report:
+npm run test:coverage
 
-## Running end-to-end tests
+## 📄 License
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
